@@ -7,3 +7,5 @@
 6. Lock Picking
 7. Use termux instead of terminal/terminator in linux
 8. Follow 1hr and then 30mins method
+
+[Home](https://suchitreddi.github.io/)
