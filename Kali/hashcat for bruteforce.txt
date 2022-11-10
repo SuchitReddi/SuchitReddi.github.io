@@ -1,0 +1,63 @@
+This is for kali linux
+download hashcat utilities from github
+
+HCCPAX IS OUTDATED, USE HC22000
+
+git clone https://github.com/hashcat/hashcat-utils.git
+
+cd hashcat-utils/src/
+
+make
+
+gcc -o cap2hccapx cap2hccapx.c
+
+mv cap2hccapx /bin
+
+rm cap2hccapx.c
+
+cap2hccapx /root/wpa_handshake-01.cap /root/wpa_handshake-01.hccapx
+
+Output should be:-
+Written 8 WPA Handshakes to: /root/wpa.hccapx
+
+Now to crack using hashcat
+hashcat -m 2500 -a 3 /root/wpa_handshake-01.hccapx ?d?d?d?d?d?d?d?d
+
+This will start a hashcat crack for wpa2 using bruteforce with 8 digit numbers for password
+Use hashcat -h for help with hashcat
+
+
+This is for Windows
+download hashcat from hashcat.net
+GPU Driver requirements:
+AMD GPUs on Linux require "RadeonOpenCompute (ROCm)" Software Platform (3.1 or later)
+AMD GPUs on Windows require "AMD Radeon Adrenalin 2020 Edition" (20.2.2 or later)
+Intel CPUs require "OpenCL Runtime for Intel Core and Intel Xeon Processors" (16.1.1 or later)
+NVIDIA GPUs require "NVIDIA Driver" (440.64 or later) and "CUDA Toolkit" (9.0 or later)
+
+Extract 7z zip of hashcat and open cmd from that directory by typing cmd in address bar and then enter
+
+hashcat -m 22000 hash.hc22000 -a 3 ?d?d?d?d?d?d?d?d
+
+This takes the hash from converted cap to hc22000 file and bruteforces it with 8 digit numbers
+
+?l = abcd......xyz
+?u = ABCD.......XYZ
+?d = 0123456789
+?s = all special characters like !@#$%
+?a = ?l?u?d?s
+
+Search mask attack for more info (https://www.cyberpratibha.com/hashcat-tutorial-for-password-cracking/)
+
+MAKING CHECKPOINTS TO RESUME THE BRUTEFORCE LATER:
+
+hashcat -m22000 -a3 -w3 -S --session <name> hash.hc22000 <parameters like ?a?a?a?a>
+
+This will make a session. Using c-checkpoint or q-quit during the bruteforce is saving the checkpoint.
+
+hashcat --session <name> --restore
+
+This will resume the attack from checkpoint (THIS WORKED EVEN AFTER RESTARTING)
+
+You can find the <name>.restore file in the location of your hashcat folder.
+Last run session automatically saves as hashcat.restore if you didn't assign any name for the session while starting the attack.
