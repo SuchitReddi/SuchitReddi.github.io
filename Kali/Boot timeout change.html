@@ -1,0 +1,33 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Boot timeout change.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <p>
+      <a href="..">Back</a>
+    </p>
+    <p>Grub bootloader generally has other OSs on the device in it.<br />
+But the latest grub version removed that option by default. We should enable it ourself.\</p>
+    <p>nano /etc/default/grub</p>
+    <p>add GRUB_DISABLE_OS_PROBER=false<br />
+edit the default with the number for os starting from 0 for kali<br />
+change timeout<br />
+then ^O and enter<br />
+then ^X to exit<br />
+finally type update-grub</p>
+    <p>
+      <a href="..">Back</a>
+    </p>
+  </body>
+</html>

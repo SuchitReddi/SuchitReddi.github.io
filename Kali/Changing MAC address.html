@@ -1,0 +1,33 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Changing MAC address.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <p>
+      <a href="..">Back</a>
+    </p>
+    <p>We can see MAC address by using ifconfig<br />
+MAC address looks like,ether 00:00:27:59:1b:54\
+IP address looks like inet 10.20.54.335<br />
+To change MAC, first we have to disable that interface</p>
+    <p>ifconfig wlan0 down to disable wireless adapter interface.<br />
+ifconfig wlan0 hw ether 00:11:22:33:44:55 will change MAC.<br />
+ifconfig wlan0 up will enable interface again.</p>
+    <p>We used hw because we want to change hardware address.<br />
+An important thing to notice is that MAC address will revert to original after restarting device.</p>
+    <p>
+      <a href="..">Back</a>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Monitor mode.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <p>
+      <a href="..">Back</a>
+    </p>
+    <p>There are two ways to enable monitor mode for wlan</p>
+    <p>USING IFCONFIG AND IWCONFIG<br />
+iwconfig to check mode of wlan0<br />
+ifconfig wlan0 down to disable wireless interface<br />
+airmon-ng check kill to kill processes which can interfere with it<br />
+iwconfig wlan0 mode monitor to change to monitor mode<br />
+ifconfig wlan0 up to enable wireless interface again\</p>
+    <p>USING AIRMON-NG<br />
+ifconfig wlan0 down<br />
+airmon-ng check kill<br />
+airmon-ng start wlan0\
+ifconfig wlan0 up</p>
+    <p>
+      <a href="..">Back</a>
+    </p>
+  </body>
+</html>

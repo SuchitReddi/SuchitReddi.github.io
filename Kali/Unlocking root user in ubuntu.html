@@ -1,0 +1,45 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Unlocking root user in ubuntu.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <p>
+      <a href="..">Back</a>
+    </p>
+    <p>Use sudo -i passwd root<br />
+But, ubuntu has an additional security layer to block root account login.<br />
+We should change some files, but take backups of them for any future problems.</p>
+    <p>mkdir backup<br />
+then cp /etc/gdm3/custom.conf backup/<br />
+then cp /etc/pam.d/gdm-password backup/<br />
+Check using ls backup/<br />
+if there are custom.conf and gdm-password in backup, it is a success</p>
+    <p>Now, use sudo nano /etc/gdm3/custom.conf<br />
+Type AllowRoot=true between [security] and [xdmcp]<br />
+Save it using ^o and enter then ^x<br />
+sudo nano /etc/pam.d/gdm-password<br />
+Here, put # in the third line before auth required pam_succeed_if.so user !=root quiet_success to make it as a comment, and save it.<br />
+Now, reboot using sudo reboot -f</p>
+    <p>To disable root password and lock it again, use sudo passwd -dl root<br />
+Then, restore original backup files of custom.conf and gdm-password<br />
+sudo cp backup/gdm-password /etc/pam.d/gdm-password<br />
+sudo cp backup/custom.conf /etc/gdm3/custom.conf<br />
+Or, remove AllowRoot=true form custom.conf and # form gdm-password<br />
+Refer to
+<a href="https://www.computernetworkingnotes.com/linux-tutorials/how-to-enable-and-disable-root-login-in-ubuntu.html#:%7E:text=Enabling%20and%20disable%20root%20login%20in%20nutshell&amp;text=CLI%20%26%20GUI%20both-,Use%20the%20sudo%20%E2%80%93i%20passwd%20root%20command.,conf%20file">https://www.computernetworkingnotes.com/linux-tutorials/how-to-enable-and-disable-root-login-in-ubuntu.html#:~:text=Enabling%20and%20disable%20root%20login%20in%20nutshell&amp;text=CLI%20%26%20GUI%20both-,Use%20the%20sudo%20%E2%80%93i%20passwd%20root%20command.,conf%20file</a>.</p>
+    <p>
+      <a href="..">Back</a>
+    </p>
+  </body>
+</html>

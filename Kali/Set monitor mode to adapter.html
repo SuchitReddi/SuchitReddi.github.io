@@ -1,0 +1,46 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>Set monitor mode to adapter.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <p>
+      <a href="..">Back</a>
+    </p>
+    <p>TP Link Archer T2U Plus<br />
+sudo apt update<br />
+cd<br />
+sudo rmmod r8188eu.ko<br />
+git clone <a href="https://github.com/aircrack-ng/rtl8188eus.git">https://github.com/aircrack-ng/rtl8188eus.git</a><br />
+cd<br />
+cd rtl8188eus/<br />
+sudo -i<br />
+echo "blacklist r8188eu.ko" &gt; "/etc/modprobe.d/realtek.conf"<br />
+exit<br />
+make<br />
+sudo make install<br />
+sudo modprobe 8188eu<br />
+sudo iwconfig\</p>
+    <p>remove and connect wireless adapter if it is not shown<br />
+let us assume that it is shown as wlan1 in iwconfig<br />
+wlan1 will be shown to be set to managed mode\</p>
+    <p>sudo ip link set wlan1 down<br />
+sudo iw dev wlan1 set type monitor<br />
+sudo ip link set wlan1 up<br />
+sudo iwconfig\</p>
+    <p>you should be able to see wlan1 set to monitor mode now</p>
+    <p>
+      <a href="..">Back</a>
+    </p>
+  </body>
+</html>

