@@ -1,3 +1,5 @@
+[Back](https://suchitreddi.github.io/Kali/)
+
 for autosuggestions before typing full words:(check web for more accurate description)
 apt-get install zsh
 apt-get install zsh-syntax-highlighting
@@ -8,3 +10,5 @@ echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" | t
 source ~/.zshrc
 nano ~/.bashrc
 add exec zsh after #for examples in the third line and save
+
+[Back](https://suchitreddi.github.io/Kali/)
