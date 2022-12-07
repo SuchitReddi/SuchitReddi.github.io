@@ -1,0 +1,6 @@
+Instead of clicking on the up arrow to go through the previously typed commands, you can do this.\
+Type `history`. It will show a numbered list of all typed commands.\
+To select a command: `!#`. # is the number of the command.\
+`!!` will run the last command.\
+`!?search_term` to search for a fixed command.\
+`history | grep search_term` will show all the commands with the search_term in history.
