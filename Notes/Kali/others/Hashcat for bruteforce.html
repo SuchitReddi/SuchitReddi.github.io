@@ -6,8 +6,8 @@
 	<meta name="description" content="Downloading and using hashcat on linux and windows for bruteforcing with an included example.">
   </head>
     <body>
-        <p><a href=".">Back<br></a>
-  <a href="https://suchitreddi.github.io/">Home</a></p>
+        <p><a href="." style="line-height: 2em;">Back<br></a>
+<a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a></p>
 <p>THIS IS FOR KALI LINUX. Download hashcat utilities from github<br />
 HCCPAX IS OUTDATED, USE HC22000<br />
 git clone <a href="https://github.com/hashcat/hashcat-utils.git">https://github.com/hashcat/hashcat-utils.git</a></p>
@@ -36,7 +36,7 @@ hashcat -m 22000 hash.hc22000 -a 3 ?d?d?d?d?d?d?d?d</p>
 ?d = 0123456789<br />
 ?s = all special characters like !@#$%<br />
 ?a = ?l?u?d?s</p>
-<p>Search mask attack for more info (<a href="https://www.cyberpratibha.com/hashcat-tutorial-for-password-cracking/">https://www.cyberpratibha.com/hashcat-tutorial-for-password-cracking/</a>)</p>
+<p>Search mask attack for more info <a href="https://www.cyberpratibha.com/hashcat-tutorial-for-password-cracking/">here</a>.</p>
 <p>MAKING CHECKPOINTS TO RESUME THE BRUTEFORCE LATER:<br />
 hashcat -m22000 -a3 -w3 -S --session <name> hash.hc22000 &lt;parameters like ?a?a?a?a&gt;<br />
 This will make a session. Using c-checkpoint or q-quit during the bruteforce is saving the checkpoint.<br />
@@ -44,8 +44,8 @@ hashcat --session <name> --restore</p>
 <p>This will resume the attack from checkpoint (THIS WORKED EVEN AFTER RESTARTING)<br />
 You can find the <name>.restore file in the location of your hashcat folder.<br />
 Last run session automatically saves as hashcat.restore if you didn't assign any name for the session while starting the attack.</p>
-<p><a href=".">Back<br></a>
-  <a href="https://suchitreddi.github.io/">Home</a></p>
+<p><a href="." style="line-height: 2em;">Back<br></a>
+<a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a></p>
 
     </body>
 </html>
