@@ -1,0 +1,27 @@
+AIRGEDDON
+go to browser and go to airgeddon github
+click on green button for code and copy the https address which looks like
+https://github.com/v1s1t0r1sh3r3/airgeddon.git
+
+git clone https://github.com/v1s1t0r1sh3r3/airgeddon.git
+cd airgeddon
+./airgeddon.sh
+
+BRAVE
+go to browser and search brave for linux or use these codes
+
+sudo apt install apt-transport-https curl
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update
+sudo apt install brave-browser
+
+VIRTUAL BOX
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
+
+sudo apt update && sudo apt install virtualbox-
+(hit tab after pasting this command, you will see available versions. Select one and type it.)
+
+sudo apt remove virtualbox virtualbox-*
+to remove virtual box.
