@@ -2,23 +2,23 @@
 <html lang="en">
 <title> Boot timeout change </title>
   <head>
-    <meta name="viewport" content="width=device-width", initial scale=1">
+    <meta name="viewport" content="width=device-width, initial scale=1">
 	<meta name="description" content="Changing the boot order and boot timeout in linux.">
+	<meta name="author" content="Suchit Reddi">
+	<style>
+	iframe {
+	max-width: 1000px;
+	width: 100%;
+	height: 445px;
+	}
+	</style>
   </head>
   <body>
     <p>
 <a href="." style="line-height: 2em;">Back<br></a>
 <a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a>
     </p>
-    <p>Grub bootloader generally has other OSs on the device in it.<br />
-But the latest grub version removed that option by default. We should enable it ourself.\</p>
-    <p>nano /etc/default/grub</p>
-    <p>add GRUB_DISABLE_OS_PROBER=false<br />
-edit the default with the number for os starting from 0 for kali<br />
-change timeout<br />
-then ^O and enter<br />
-then ^X to exit<br />
-finally type update-grub</p>
+	<iframe src="boot timeout change.txt"></iframe>
     <p>
 <a href="." style="line-height: 2em;">Back<br></a>
 <a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a>

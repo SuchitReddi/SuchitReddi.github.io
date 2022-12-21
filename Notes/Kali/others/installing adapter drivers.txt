@@ -1,0 +1,21 @@
+go to index of /kali/pool/main/l/linux from https://http.kali.org
+download the linux-headers deb file of your device and type uname -r to see the version of your kali
+the download file looks like:-
+linux-headers-5.16.0-kali7-amd64_5.16.18-1kali1_amd64.deb  
+
+chmod +x linux-headers-5.16.0-kali7-amd64_5.16.18-1kali1_amd64.deb 
+or go to the downloaded files properties and allow it to function as executable
+
+sudo apt install build-essential libelf-dev
+
+dpkg -i linux-headers-5.16.0-kali7-amd64_5.16.18-1kali1_amd64.deb
+This step might give errors like some dependencies like linux-kbuild-5.16 is missing etc, you have to download them first from above website and then make them executable and use dpkg. 
+
+git clone https://github.com/aircrack-ng/rtl8812au.git 
+to download rtl8812au for tplink archer t2u plus
+
+cd rtl8812au/
+make
+make install
+
+this will install drivers

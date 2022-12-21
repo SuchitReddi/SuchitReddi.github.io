@@ -2,36 +2,23 @@
 <html lang="en">
 <title> Set monitor mode on adapter </title>
   <head>
-    <meta name="viewport" content="width=device-width", initial scale=1">
+    <meta name="viewport" content="width=device-width, initial scale=1">
 	<meta name="description" content="Setting monitor mode on adapter using terminal.">
+	<meta name="author" content="Suchit Reddi">
+	<style>
+	iframe {
+	max-width: 1000px;
+	width: 100%;
+	height: 445px;
+	}
+	</style>
   </head>
   <body>
     <p>
 <a href="." style="line-height: 2em;">Back<br></a>
 <a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a>
     </p>
-    <p>TP Link Archer T2U Plus<br />
-sudo apt update<br />
-cd<br />
-sudo rmmod r8188eu.ko<br />
-git clone <a href="https://github.com/aircrack-ng/rtl8188eus.git">https://github.com/aircrack-ng/rtl8188eus.git</a><br />
-cd<br />
-cd rtl8188eus/<br />
-sudo -i<br />
-echo "blacklist r8188eu.ko" &gt; "/etc/modprobe.d/realtek.conf"<br />
-exit<br />
-make<br />
-sudo make install<br />
-sudo modprobe 8188eu<br />
-sudo iwconfig\</p>
-    <p>remove and connect wireless adapter if it is not shown<br />
-let us assume that it is shown as wlan1 in iwconfig<br />
-wlan1 will be shown to be set to managed mode\</p>
-    <p>sudo ip link set wlan1 down<br />
-sudo iw dev wlan1 set type monitor<br />
-sudo ip link set wlan1 up<br />
-sudo iwconfig\</p>
-    <p>you should be able to see wlan1 set to monitor mode now</p>
+	<iframe src="set monitor mode on adapter.txt"></iframe>
     <p>
 <a href="." style="line-height: 2em;">Back<br></a>
 <a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a>

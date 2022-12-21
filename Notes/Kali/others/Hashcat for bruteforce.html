@@ -2,51 +2,26 @@
 <html lang="en">
 <title> Hashcat for bruteforce </title>
   <head>
-    <meta name="viewport" content="width=device-width", initial scale=1">
+    <meta name="viewport" content="width=device-width, initial scale=1">
 	<meta name="description" content="Downloading and using hashcat on linux and windows for bruteforcing with an included example.">
+	<meta name="author" content="Suchit Reddi">
+	<style>
+	iframe {
+	max-width: 1000px;
+	width: 100%;
+	height: 445px;
+	}
+	</style>
   </head>
-    <body>
-        <p><a href="." style="line-height: 2em;">Back<br></a>
-<a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a></p>
-<p>THIS IS FOR KALI LINUX. Download hashcat utilities from github<br />
-HCCPAX IS OUTDATED, USE HC22000<br />
-git clone <a href="https://github.com/hashcat/hashcat-utils.git">https://github.com/hashcat/hashcat-utils.git</a></p>
-<p>cd hashcat-utils/src/<br />
-make<br />
-gcc -o cap2hccapx cap2hccapx.c<br />
-mv cap2hccapx /bin<br />
-rm cap2hccapx.c<br />
-cap2hccapx /root/wpa_handshake-01.cap /root/wpa_handshake-01.hccapx</p>
-<p>Output should be:- Written 8 WPA Handshakes to: /root/wpa.hccapx<br />
-Now to crack using hashcat<br />
-hashcat -m 2500 -a 3 /root/wpa_handshake-01.hccapx ?d?d?d?d?d?d?d?d</p>
-<p>This will start a hashcat crack for wpa2 using bruteforce with 8 digit numbers for password<br />
-Use hashcat -h for help with hashcat</p>
-<p>THIS IS FOR WINDOWS. Download hashcat from hashcat.net<br />
-GPU Driver requirements:<br />
-AMD GPUs on Linux require &quot;RadeonOpenCompute (ROCm)&quot; Software Platform (3.1 or later)<br />
-AMD GPUs on Windows require &quot;AMD Radeon Adrenalin 2020 Edition&quot; (20.2.2 or later)<br />
-Intel CPUs require &quot;OpenCL Runtime for Intel Core and Intel Xeon Processors&quot; (16.1.1 or later)<br />
-NVIDIA GPUs require &quot;NVIDIA Driver&quot; (440.64 or later) and &quot;CUDA Toolkit&quot; (9.0 or later)</p>
-<p>Extract 7z zip of hashcat and open cmd from that directory by typing cmd in address bar<br />
-hashcat -m 22000 hash.hc22000 -a 3 ?d?d?d?d?d?d?d?d</p>
-<p>This takes the hash from converted cap to hc22000 file and bruteforces it with 8 digit numbers<br />
-?l = abcd......xyz<br />
-?u = ABCD.......XYZ<br />
-?d = 0123456789<br />
-?s = all special characters like !@#$%<br />
-?a = ?l?u?d?s</p>
-<p>Search mask attack for more info <a href="https://www.cyberpratibha.com/hashcat-tutorial-for-password-cracking/">here</a>.</p>
-<p>MAKING CHECKPOINTS TO RESUME THE BRUTEFORCE LATER:<br />
-hashcat -m22000 -a3 -w3 -S --session <name> hash.hc22000 &lt;parameters like ?a?a?a?a&gt;<br />
-This will make a session. Using c-checkpoint or q-quit during the bruteforce is saving the checkpoint.<br />
-hashcat --session <name> --restore</p>
-<p>This will resume the attack from checkpoint (THIS WORKED EVEN AFTER RESTARTING)<br />
-You can find the <name>.restore file in the location of your hashcat folder.<br />
-Last run session automatically saves as hashcat.restore if you didn't assign any name for the session while starting the attack.</p>
-<p><a href="." style="line-height: 2em;">Back<br></a>
-<a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a></p>
-
-    </body>
+  <body>
+    <p>
+<a href="." style="line-height: 2em;">Back<br></a>
+<a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a>
+    </p>
+	<iframe src="hashcat for bruteforce.txt"></iframe>
+    <p>
+<a href="." style="line-height: 2em;">Back<br></a>
+<a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home<br></a>
+    </p>
+  </body>
 </html>
-            
