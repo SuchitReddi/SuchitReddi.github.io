@@ -79,22 +79,19 @@ Resource in URL can be used to describe anything. In an example of a bookstore w
 
 REST – Representational State Transfer. 
 This type of remote API is one of the many used but, it is the most used one. This course focuses on REST API’s. 
-
 For an API to be RESTful, these constraints should be followed:
-Client-Server Architecture
-Statelessness
-Layered System
-Cacheability
-Uniform Design
-Code on Demand
+1. Client-Server Architecture
+2. Statelessness
+3. Layered System
+4. Cacheability
+5. Uniform Design
+6. Code on Demand
 
 An API's definition is simply a contract which defines how two applications should communicate. This communication happens between client and server, so it is **client-server** communication.
 
 **Stateless** means it doesn’t remember anything happening in a session, so if you want to maintain state like login in a session, you must do it in every session individually using headers.
 
 A **layered system** is when an API calls another API. This is done to make the API more efficient. Like, if you want to get the weather of a city, you can use an API which calls another API to get the weather of that city.
-
-The **code on demand** constraint is optional. An API can be RESTful even without this. The client can request code from the server, and then the response from the server will contain some code, usually in the form of a script, when the respnse is in HTML. The client can then execute that code.
 
 A RESTful API should support **caching**. If you have any file which is consuming more storage, you should be careful to conserve resources by not calling that file again and again. So, you can just store the file and check if it is modified. If it is, we should call for that file, if it isn’t, we can just call the stored file.
 
@@ -106,14 +103,16 @@ Uniform design has four more constraints in it. They are:
 3. Each request to API has all info server need to perform the request, and each response server returns has all info client needs to understand it.
 4. Something about Hypermedia as the engine of application state, which I quite didn't understand. You can watch a [video](https://www.youtube.com/watch?v=6UXc71O7htc) on it here. 
 
+The **code on demand** constraint is optional. An API can be RESTful even without this. The client can request code from the server, and then the response from the server will contain some code, usually in the form of a script, when the respnse is in HTML. The client can then execute that code.
+
 The body of the reply you get when you send a http request is in JSON, which is JavaScript Object Notation. It provides a way to structure and nest your data. Every programming language will have ways to turn a JSON string into a native object. You can also specify a Content Type in your request.
 
 HTTP Verbs used in REST APIs:			CRUD
-GET						                    Read
-POST						                  Create
-PUT						                    Update
-PATCH                             Update
-DELETE						                Delete
+GET						                       Read
+POST						                      Create
+PUT						                       Update
+PATCH                           Update
+DELETE						                    Delete
 
 ### Video 1 - Exploring an API online
 
