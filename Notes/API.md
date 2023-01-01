@@ -1,5 +1,7 @@
 # Introduction to APIs
 
+**I made changes to the notes from the github link below to make my own notes**
+
 API beginner course by FreeCodeCamp: [Youtube Video](https://www.youtube.com/watch?v=GZvSYJDk-us)
 GitHub [link](https://github.com/craigsdennis/intro-to-apis-course).
 
