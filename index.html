@@ -9,51 +9,69 @@
   <meta name="author" content="Suchit Reddi">
 </head>
 <style>
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-}
 
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-html {
+  html {
     background-image: url('index.jpg');
     background-size: cover;
-}
+  }
+
+  .block {
+    width: 30%;
+    float: left;
+    text-align: center;
+    
+  }
+
+  .block img {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+    .block img {
+      width: 100%;
+    }
+  }
+
+  button {
+    margin-top: 4px;
+  }
 </style>
 
 <body>
-  <span style="color:violet">
-    <h2>Work in progress</h2>
     <p>
-      <a href="https://github.com/SuchitReddi/SuchitReddi.github.io" target="_blank" rel="noopener noreferrer"
-        style="line-height: 2em;">GitHub Repository</a> (The repository for this website)<br>
-      <a href="resume.html" style="line-height: 2em;">Resume</a> (Updated Resume)<br>
-      <a href="Work" style="line-height: 2em;">Work</a> (My research, projects, certifications etc)<br>
-      <a href="Notes" style="line-height: 2em;">Notes</a> (Notes and Stuff on various topics)<br>
-      <a href="Cinema" style="line-height: 2em;">Movies & Series</a> (About a few movies and series I like)<br>
-      <!--<a href="todo.html" style="line-height: 2em;">To Do</a> (Just a list of tasks to be done)<br>-->
-      <a href="sitemap.html" target="_blank" rel="noopener noreferrer" style="line-height: 2em;">Sitemap</a> (Sitemap
-      for easier navigation)<br>
+    <div class="block">
+      <img src="Misc/work.jpg" alt="Work image">
+      <button><a href="Work" style="line-height: 2em;">Work</a> (Research, projects etc)</button>
+    </div>
+    <div class="block">
+      <img src="Misc/notes.jpeg" alt="Notes image">
+      <button><a href="Notes" style="line-height: 2em;">Notes</a> (Notes and Stuff on various topics)</button>
+    </div>
+    <div class="block">
+      <img src="Misc/resume.jpg" alt="Resume image">
+      <button><a href="resume.html" style="line-height: 2em;">Resume</a> (Frequently updated resume)</button>
+    </div>    
+    <div class="block">
+      <img src="Misc/cinema.jpg" alt="Cinema image">
+      <button><a href="Cinema" style="line-height: 2em;">Movies & Series</a> (Few movies and series I like)</button>
+    </div>
+    <div class="block">
+      <img src="Misc/GitHub.jpg" alt="GitHub image">
+      <button><a href="https://github.com/SuchitReddi/SuchitReddi.github.io" target="_blank"
+          rel="noopener noreferrer nofollow" style="line-height: 2em;">GitHub Repo</a> (Project's Repository)</button>
+    </div>
+    <!--
+    <div class="block">
+      <img src="GitHub.png" alt="GitHub image">
+      <button><a href="Cinema" style="line-height: 2em;">Movies & Series</a> (About a few movies and series I like)</button>
+    </div> 
+    -->
+    <!--<a href="todo.html" style="line-height: 2em;">To Do</a> (Just a list of tasks to be done)<br>-->
     </p>
-  </span>
 </body>
 
 </html>
