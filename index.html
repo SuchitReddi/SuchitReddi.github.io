@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
   <title> Suchit Reddi's website </title>
   <meta name="viewport" content="width=device-width, initial scale=1">
   <meta name="description" content="A website made by Suchit Reddi to host stuff like 
 	Research, Accomplishments, Projects, Resume, Tips, Notes, Series and Movies etc.">
   <meta name="author" content="Suchit Reddi">
 </head>
+	
 <style>
-
   html {
     background-image: url('index.jpg');
     background-size: cover;
@@ -19,7 +20,11 @@
     width: 30%;
     float: left;
     text-align: center;
-    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
   }
 
   .block img {
@@ -43,6 +48,7 @@
 
 <body>
     <p>
+    <h1 style="text-align:center">Suchit Reddi's Website<h1>
     <div class="block">
       <img src="Misc/work.jpg" alt="Work image">
       <button><a href="Work" style="line-height: 2em;">Work</a> (Research, projects etc)</button>
