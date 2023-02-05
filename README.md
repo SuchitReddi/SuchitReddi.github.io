@@ -1,3 +1,3 @@
 # SuchitReddi.github.io
 This is a website I made to host some random stuff(Work, notes, Series, resume, etc).
-![Cover image](readme_cover.jpeg)
+![Cover image](Misc/readme_cover.jpeg)
