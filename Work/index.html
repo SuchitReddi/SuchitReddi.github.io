@@ -9,59 +9,128 @@
   <meta name="author" content="Suchit Reddi">
 
   <style>
-    h3{
+    h2 {
       text-align: center;
-      margin-bottom: 4px;
+      margin: 2px;
     }
 
-    div{
+    h3 {
       text-align: center;
-      margin: -2px;
+      margin: 2px;
+    }
+
+    .block {
+      width: 25%;
+      float: left;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    @media (max-width: 767px) {
+      .block {
+        margin: 5px;
+        width: 25%;
+        float: left;
+        align-items: center;
+        align-content: center;
+      }
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .block img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 767px) {
+      .block img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+    }
+
+    button {
+      font-size: 12px;
+      margin: 2px;
+      max-width: 150px;
+    }
+
+    @media (max-width: 767px) {
+      button {
+        max-width: 100px;
+        font-size: 10px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home</a>
-    
-    <h3>Cybersecurity Projects</h3>
-    <div>
-    <div>
-      <a href="https://suchitreddi.github.io/CyberSentinel/" style="line-height: 2em;">Cyber Sentinel</a><br>(A webapp
-    demonstrating vulnerabilities and their fixes)
+  <a href="https://suchitreddi.github.io/">Home</a>
+  <h2>Work and Projects</h2>
+  <h3>Cybersecurity</h3>
+  <div>
+    <div class="block">
+      <img src="../Misc/work/index/cybersentinel.jpg" alt="">
+      <button><a href="https://suchitreddi.github.io/CyberSentinel/">Cyber Sentinel</a><br>Vulnerable webapp</button>
     </div>
-    <div>
-      <a href="voice.html" style="line-height: 2em;">Voice Spoofing Detection</a><br>(Voice spoofing detection using 
-    one-class classification)
+    <div class="block">
+      <img src="../Misc/work/index/spoofing.jpg" alt="">
+      <button><a href="voice.html">Voice Spoofing Detection</a></button>
     </div>
-    <div>
-      <a href="keyloggers.html" style="line-height: 2em;">Keyloggers</a><br>(A review paper on the topic Keyloggers and Touchloggers)
+    <div class="block">
+      <img src="../Misc/work/index/keyloggers.jpg" alt="">
+      <button><a href="keyloggers.html">Keylogger Threats</a><br>Review paper on keyloggers</button>
     </div>
-    
-    <h3>Web Development Projects</h3>
-    <div>
-      <a href="website.html" style="line-height: 2em;">Personal Website</a><br>(My website hosted using GitHub Pages)
-    </div>
-    <div>
-      <a href="https://suchitreddi.github.io/GDSC_Developer_Cohort/" style="line-height: 2em;">GDSC Projects</a><br>(Google Developer Student Club Dev Cohort Projects)
-    </div>
-    
-    <h3>Miscellaneous</h3>
-    <div>
-      <a href="editor.html" style="line-height: 2em;">Text Editor</a><br>(A text editor using Java Swings)
-    </div>
-    <div>
-      <a href="coursera-dl.html" style="line-height: 2em;">Coursera-dl</a><br>(Coursera course content downloader)
-    </div>
-    <div>
-      <a href="Certificates" style="line-height: 2em;">Certifications</a><br>(My certifications)
-    </div>
-    <div>
-      <a href="follow.html" style="line-height: 2em;">Newsfeed</a><br>(Links to news or RSS feeds of important cybersecurity websites)
-    </div>
-    </div>
+    <div class="clearfix"></div> <!--The clearfix class sends the content next to this line to next line-->
 
-  <a href="https://suchitreddi.github.io/" style="line-height: 2em;">Home</a>
+    <h3>Web & App Development</h3>
+    <div class="block">
+      <img src="../Misc/work/index/website.jpg" alt="">
+      <button><a href="website.html">Personal Website</a></button>
+    </div>
+    <div class="block">
+      <img src="../Misc/work/index/editor.png" alt="">
+      <button><a href="editor.html">Text Editor</a><br>Java text editor</button>
+    </div>
+    <div class="block">
+      <img src="../Misc/work/index/gdsc.png" alt="">
+      <button><a href="https://suchitreddi.github.io/GDSC_Developer_Cohort/">GDSC Projects</a><br>Dev Cohort Projects</button>
+    </div>
+    <div class="clearfix"></div>
+
+    <h3>Miscellaneous</h3>
+    <div class="block">
+      <img src="../Misc/work/index/coursera-dl.png" alt="">
+      <button><a href="coursera-dl.html">Coursera-dl</a><br>Coursera downloader in Python</button>
+    </div>
+    <div class="block">
+      <img src="../Misc/work/index/certifications.jpg" alt="">
+      <button><a href="Certificates/">Certifications</a></button>
+    </div>
+    <div class="block">
+      <img src="../Misc/work/index/newsfeed.png" alt="">
+      <button><a href="newsfeeds.html">Newsfeeds</a><br>Cybersecurity RSS feeds</button>
+    </div>
+    <div class="clearfix"></div>
+    <p>
+      <!--<div class="block">
+      <img src="../Misc/work/index/" alt="">
+      <button><a href=""></a><br></button>
+    </div>-->
+    </p>
+  </div>
+  <a href="https://suchitreddi.github.io/">Home</a>
 </body>
 
 </html>

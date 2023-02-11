@@ -9,27 +9,39 @@
 	Research, Accomplishments, Projects, Resume, Tips, Notes, Series and Movies etc.">
   <meta name="author" content="Suchit Reddi">
 </head>
-	
+
 <style>
   html {
-    background-image: url('Misc/index.jpg');
+    background-image: url('Misc/index/index.jpg');
     background-size: cover;
   }
-  
+
   h1 {
-   color: orange;
-   text-align: center;
+    color: orange;
+    text-align: center;
   }
- 
+
   .block {
     width: 30%;
     float: left;
     text-align: center;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     align-content: center;
+  }
+
+  @media (max-width: 767px){
+    .block{
+      height: 150px;
+    }
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   .block img {
@@ -47,47 +59,56 @@
   }
 
   button {
-    margin: 4px;
+    font-size: 13px;
+    margin: 2px;
+    max-width: 200px;
+  }
+
+  @media (max-width: 767px) {
+    button {
+      max-width: 150px;
+      font-size: 9px;
+    }
   }
 </style>
 
 <body>
-    <h1>Suchit Reddi's Website</h1>
-    <div class="block">
-      <img src="Misc/work.jpg" alt="Work image">
-      <button><a href="Work">Work</a> (Projects & stuff)</button>
-    </div>
-    <div class="block">
-      <img src="Misc/notes.jpeg" alt="Notes image">
-      <button><a href="Notes">Notes</a> (Notes on various topics)</button>
-    </div>
-    <div class="block">
-      <img src="Misc/resume.jpg" alt="Resume image">
-      <button><a href="resume.html">Resume</a> (Updated resume)</button>
-    </div>    
-    <div class="block">
-      <img src="Misc/cinema.jpg" alt="Cinema image">
-      <button><a href="Cinema">Cinema</a> (Shows I liked)</button>
-    </div>
-    <div class="block">
-      <img src="Misc/github.jpg" alt="GitHub image">
-      <button><a href="https://github.com/SuchitReddi/SuchitReddi.github.io" target="_blank"
-          rel="noopener noreferrer nofollow">GitHub</a> (Project's Repository)</button>
-    </div>
-    <div class="block">
-      <img src="Misc/linkedin.png" alt="LinkedIn image">
-      <button><a href="https://www.linkedin.com/in/suchitreddi/" target="_blank"
-          rel="noopener noreferrer nofollow">LinkedIn</a> (LindedIn profile)</button>
-    </div>
-	<p>
+  <h1>Suchit Reddi's Website</h1>
+  <div class="block">
+    <img src="Misc/index/work.jpg" alt="Work image">
+    <button><a href="Work">Work</a><br>Projects and Research</button>
+  </div>
+  <div class="block">
+    <img src="Misc/index/notes.jpeg" alt="Notes image">
+    <button><a href="Notes">Notes</a><br>Notes on various topics</button>
+  </div>
+  <div class="block">
+    <img src="Misc/index/resume.jpg" alt="Resume image">
+    <button><a href="resume.html">Resume</a><br>Updated resume</button>
+  </div>
+  <div class="block">
+    <img src="Misc/index/cinema.jpg" alt="Cinema image">
+    <button><a href="Cinema">Cinema</a><br>Shows and movies I like</button>
+  </div>
+  <div class="block">
+    <img src="Misc/index/github.jpg" alt="GitHub image">
+    <button><a href="https://github.com/SuchitReddi/SuchitReddi.github.io" target="_blank"
+        rel="noopener noreferrer nofollow">GitHub</a><br>Project Repository</button>
+  </div>
+  <div class="block">
+    <img src="Misc/index/linkedin.png" alt="LinkedIn image">
+    <button><a href="https://www.linkedin.com/in/suchitreddi/" target="_blank"
+        rel="noopener noreferrer nofollow">LinkedIn</a><br>LindedIn profile</button>
+  </div>
+  <p>
     <!--
     <div class="block">
-      <img src="GitHub.png" alt="GitHub image">
-      <button><a href="Cinema">Movies & Series</a> (About a few movies and series I like)</button>
+      <img src="Misc/index/GitHub.png" alt="GitHub image">
+      <button><a href="Cinema">Movies & Series</a><br>About a few movies and series I like</button>
     </div> 
     -->
     <!--<a href="Misc/todo.html">To Do</a> (Just a list of tasks to be done)<br>-->
-	</p>
+  </p>
 </body>
 
 </html>
