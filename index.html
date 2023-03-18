@@ -79,6 +79,7 @@
     margin: 2px;
     max-width: 200px;
     padding: 1px;
+    cursor: pointer;
   }
 
   @media (max-width: 767px) {
@@ -107,48 +108,52 @@
     padding: 10px 1px;
     padding: 10px 10px;
   }
-
-  /* .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  } */
 </style>
 
 <body>
   <h1>Suchit Reddi's Website</h1>
   <div class="container">
     <div class="box">
-      <img src="Misc/index/work.jpg" alt="Work image">
-      <button><a href="Work">Work</a><br>Projects and Research</button>
+      <img src="Misc/index/work.jpg" alt="Work image" />
+      <a href="Work">
+        <button>Work and Projects</button>
+      </a>
     </div>
     <div class="box">
       <img src="Misc/index/notes.jpeg" alt="Notes image">
-      <button><a href="Notes">Notes</a><br>Notes on various topics</button>
+      <a href="Notes">
+        <button>Notes on various topics</button>
+      </a>
     </div>
     <div class="box">
       <img src="Misc/index/resume.jpg" alt="Resume image">
-      <button><a href="resume.html">Resume</a><br>Updated resume</button>
+      <a href="resume.html">
+        <button>Updated Resume</button>
+      </a>
     </div>
     <div class="box">
       <img src="Misc/index/cinema.jpg" alt="Cinema image">
-      <button><a href="Cinema">Cinema</a><br>Shows and movies I like</button>
+      <a href="Cinema">
+        <button>Shows and Movies</button>
+      </a>
     </div>
 
     <!-- <div class="box">
       <img src="Misc/index/GitHub.png" alt="GitHub image">
-      <button><a href="Cinema">Movies & Series</a><br>About a few movies and series I like</button>
+      <a href="Cinema">
+      <button>Movies<br>About a few movies and series I like</button>
+      </a>
     </div> -->
   </div>
 </body>
 
 <footer>
   <div class="footer-class">
-    <h3 style=" color: orangered; font-weight: 1000;">Contact:</h3>
+    <h3 style=" color: orangered">Contact:</h3>
     <p style="background-color: green; color: white">
-      <a target="_blank" rel="noopener noreferrer nofollow" href="mailto:rs521@snu.edu.in">Mail</a> |
-      <a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/SuchitReddi">GitHub</a> |
-      <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.linkedin.com/in/suchitreddi/">LinkedIn</a>
+      <a href="mailto:rs521@snu.edu.in" target="_blank" rel="noopener noreferrer nofollow">Mail</a> |
+      <a href="https://github.com/SuchitReddi" target="_blank" rel="noopener noreferrer nofollow">GitHub</a> |
+      <a href="https://www.linkedin.com/in/suchitreddi/" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a>
     </p>
   </div>
 </footer>
