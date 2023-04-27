@@ -8,100 +8,126 @@
   <meta name="description" content="A website made by Suchit Reddi to host stuff like 
 	Research, Accomplishments, Projects, Resume, Tips, Notes, Series and Movies etc.">
   <meta name="author" content="Suchit Reddi">
-</head>
 
-<style>
-  html {
-    background-image: url('Misc/index/index.png');
-    background-size: 80%;
-  }
-
-  h1 {
-    color: orange;
-    text-align: center;
-  }
-
-  @media (max-width: 767px) {
-    h1 {
-      text-align: center;
+  <style>
+    html {
+      background-image: url('Misc/index/index.png');
+      background-size: contain;
+      background-color: black;
     }
-  }
 
-  .contain-box a:link {
-    color: white;
-  }
+    .contain-box a:link {
+      color: white;
+    }
 
-  .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-  }
-
-  @media (max-width: 767px) {
     .container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
     }
-  }
 
-  .box {
-    padding: 10px;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    @media (max-width: 767px) {
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
 
-  @media (max-width: 767px) {
     .box {
-      height: 100px;
-      width: 100px;
+      padding: 10px;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-  }
 
-  .box img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
+    @media (max-width: 767px) {
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+    }
 
-  @media (max-width: 767px) {
     .box img {
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
     }
-  }
 
-  button {
-    font-size: 13px;
-    margin: 2px;
-    max-width: 200px;
-    padding: 1px;
-    cursor: pointer;
-  }
-
-  @media (max-width: 767px) {
-    button {
-      max-width: 150px;
-      font-size: 9px;
+    @media (max-width: 767px) {
+      .box img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
     }
-  }
 
-  footer {
-    padding: 20px;
-  }
+    button {
+      border-radius: 8px;
+      font-size: 13px;
+      margin: 2px;
+      max-width: 200px;
+      padding: 1px;
+      cursor: pointer;
+    }
 
-  .footer-class {
-    height: 600px;
-    text-align: center;
-    padding: 10px 1px;
-    padding: 10px 10px;
-  }
-</style>
+    @media (max-width: 767px) {
+      button {
+        max-width: 150px;
+        font-size: 9px;
+        border-radius: 8px;
+      }
+    }
+
+    footer {
+      padding: 20px;
+    }
+
+    .heading {
+      text-align: center;
+      padding: 10px 10px;
+    }
+
+    .heading h1 {
+      background-color: grey;
+      margin-left: 38%;
+      margin-right: 38%;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 767px) {
+      .heading h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+
+    .footer-heading {
+      text-align: center;
+      padding: 10px 10px;
+    }
+
+    .footer-heading h3 {
+      background-color: grey;
+      margin-left: 47%;
+      margin-right: 47%;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 767px) {
+      .footer-heading h3 {
+        margin-left: 35%;
+        margin-right: 35%;
+      }
+    }
+  </style>
+</head>
 
 <body>
-  <h1>Suchit Reddi's Website</h1>
+  <div class="heading">
+    <h1>Suchit Reddi's Website</h1>
+  </div>
+
   <div class="container">
     <div class="box">
       <img src="Misc/index/work.jpg" alt="Work image" />
@@ -138,12 +164,15 @@
 </body>
 
 <footer>
-  <div class="footer-class">
-    <h3 style=" color: orangered">Contact:</h3>
+  <div class="footer-heading">
+    <h3>Contact:</h3>
     <p>
-      <a href="mailto:rs521@snu.edu.in" target="_blank" rel="noopener noreferrer nofollow">Mail</a> |
-      <a href="https://github.com/SuchitReddi" target="_blank" rel="noopener noreferrer nofollow">GitHub</a> |
-      <a href="https://www.linkedin.com/in/suchitreddi/" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a>
+      <a style="background-color: grey;" href="mailto:rs521@snu.edu.in" target="_blank"
+        rel="noopener noreferrer nofollow">Mail</a> |
+      <a style="background-color: grey;" href="https://github.com/SuchitReddi" target="_blank"
+        rel="noopener noreferrer nofollow">GitHub</a> |
+      <a style="background-color: grey;" href="https://www.linkedin.com/in/suchitreddi/" target="_blank"
+        rel="noopener noreferrer nofollow">LinkedIn</a>
     </p>
   </div>
 </footer>
