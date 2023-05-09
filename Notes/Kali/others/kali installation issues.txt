@@ -2,3 +2,19 @@ During recent kali installation of kali 22.2 and kali kernel of 5.16.0-kali7-amd
 I solved this error by going to uefi settings, enabling safe boot and clearing safe boot keys.After that, grub installed successfully.
 But, I observed no ethernet and wifi if installed without connecting to ethernet, but after connecting to ethernet, there was no wifi.
 I installed only gnome and I got both wifi and ethernet.
+
+After installing kali 23.1, I was not able to run sudo apt update, I got this error message: 
+
+Ign:1 http://kali.mirror.net.in/kali kali-rolling InRelease
+Ign:1 http://kali.mirror.net.in/kali kali-rolling InRelease
+Ign:1 http://kali.mirror.net.in/kali kali-rolling InRelease
+Err:1 http://kali.mirror.net.in/kali kali-rolling InRelease
+  Connection failed [IP: 103.195.68.3 80]
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+W: Failed to fetch http://http.kali.org/kali/dists/kali-rolling/InRelease  Connection failed [IP: 103.195.68.3 80]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+
+To resolve this issue, I thought of editing the /etc/apt/sources.list file's repositories, but editing `deb http://http.kali.org/kali kali-rolling main non-free contrib` to `deb https://http.kali.org/kali kali-rolling main non-free contrib` solved the issue.
