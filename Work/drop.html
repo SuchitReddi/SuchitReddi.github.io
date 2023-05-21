@@ -3,68 +3,50 @@
 
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-TF3WKZS5Q4');
-</script>
+        gtag('config', 'G-TF3WKZS5Q4');
+    </script>
 
     <meta charset="utf-8">
     <title> Smart Drop </title>
+    <link rel="stylesheet" type="text/css" href="/Notes/Kali/kali.css">
     <meta name="viewport" content="width=device-width, initial scale=1">
-    <meta name="description"
-        content="Drip Irrigation system using STM32">
+    <meta name="description" content="Drip Irrigation system using STM32">
     <meta name="author" content="Suchit Reddi">
 </head>
-
-<style>
-    html {
-        background-color: grey;
-    }
-
-    h1 {
-        text-align: center;
-        margin: -4px;
-    }
-
-    button {
-        border-radius: 8px;
-        padding: 1px;
-    }
-
-    @media (max-width: 767px) {
-        h1 {
-            font-size: 16px;
-            margin: -4px;
-        }
-    }
-
-    ol li iframe {
-        height: 200px;
-        width: 700px;
-    }
-
-    li a:link {
-        color: white;
-    }
-
-    @media (max-width: 767px) {
-        ol li iframe {
-            height: 200px;
-            width: 330px;
-        }
-    }
-</style>
 
 <body>
     <button><a href=".">Back</a></button><br>
     <button><a href="https://suchitreddi.github.io/">Home</a></button><br>
-    <h1>Smart Drop - Drip Irrigation System using STM32</h1>
-    <p>Work in Progress</p>
+
+    <div class="contain-box">
+        <h1>Smart Drop - Irrigation System using STM32 [Apr 2023 (1 month)]</h1>
+        <h2>Project</h2>
+        <p>
+            I contributed a little bit for this project. At first, we thought of using a Wi-Fi module to send the data
+            collected by sensors to a local server, from where it can be controlled.<br>
+            I took upon myself to look into the ESP8266 Wi-Fi module. But understanding the inbuilt HAL functions of
+            STM32 in such short time period was difficult. So, we had to leave it as a future functionality to make this
+            project an IoT project.<br>
+            We used an STM32F303RE microcontroller, a soil moisture and rain sensor, a relay, a motor pump, and a buzzer
+            in the place of LED for indicating the user.<br>
+            This smart device is capable of detecting whether the soil is wet or dry using the soil moisture sensor. It
+            senses rain intensity using the rain sensor.<br>
+            The water supply is turned on only when the soil is dry and rain intensity is low. In all the other three
+            cases, the water supply will be shut off.<br>
+            There is a <a href="/Misc/work/smartdrop/presentation.pdf" target="_blank"
+                rel="nofollow noopener noreferrer">presentation</a>, and a <a href="/Misc/work/smartdrop/report.pdf"
+                target="_blank" rel="nofollow noopener noreferrer">report</a> for this project.<br>
+            <center><img src="/Misc/work/smartdrop/smartdrop.png" alt="Smart Drop" width="70%" height="70%"></center>
+        </p>
+
+    </div>
     <button><a href=".">Back</a></button><br>
     <button><a href="https://suchitreddi.github.io/">Home</a></button><br>
 </body>
