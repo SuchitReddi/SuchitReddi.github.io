@@ -39,8 +39,17 @@
   }
 
   button {
+    background: linear-gradient(lightblue 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: 0.5s, background-position 0s;
+    background-color: white;
     border-radius: 8px;
     padding: 1px;
+  }
+
+  button:hover {
+    --p: 100%;
+    background-color: black;
+    color: black;
   }
 
   @media (max-width: 767px) {

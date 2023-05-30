@@ -3,136 +3,33 @@
 
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-TF3WKZS5Q4');
-</script>
+    gtag('config', 'G-TF3WKZS5Q4');
+  </script>
 
   <meta charset="utf-8">
   <title> Suchit Reddi's website </title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <meta name="description" content="A website made by Suchit Reddi to host stuff like 
 	Research, Accomplishments, Projects, Resume, Tips, Notes, Series and Movies etc.">
   <meta name="author" content="Suchit Reddi">
 
-  <style>
-    html {
-      background-image: url('Misc/index/index.png');
-      background-size: contain;
-      background-color: black;
-    }
-
-    .contain-box a:link {
-      color: white;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 10px;
-    }
-
-    @media (max-width: 767px) {
-      .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .box {
-      padding: 10px;
-      float: left;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    @media (max-width: 767px) {
-      .box {
-        height: 100px;
-        width: 100px;
-      }
-    }
-
-    .box img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    @media (max-width: 767px) {
-      .box img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    button {
-      border-radius: 8px;
-      font-size: 13px;
-      margin: 2px;
-      max-width: 200px;
-      padding: 1px;
-      cursor: pointer;
-    }
-
-    @media (max-width: 767px) {
-      button {
-        max-width: 150px;
-        font-size: 9px;
-        border-radius: 8px;
-      }
-    }
-
-    footer {
-      padding: 20px;
-    }
-
-    .heading {
-      text-align: center;
-      padding: 10px 10px;
-    }
-
-    .heading h1 {
-      background-color: grey;
-      margin-left: 38%;
-      margin-right: 38%;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 767px) {
-      .heading h1 {
-        margin-left: 5%;
-        margin-right: 5%;
-      }
-    }
-
-    .footer-heading {
-      text-align: center;
-      padding: 10px 10px;
-    }
-
-    .footer-heading h3 {
-      background-color: grey;
-      margin-left: 47%;
-      margin-right: 47%;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 767px) {
-      .footer-heading h3 {
-        margin-left: 35%;
-        margin-right: 35%;
-      }
-    }
-  </style>
 </head>
+
+<style>
+  html {
+    background-image: url('Misc/index/index.png');
+    background-size: contain;
+    background-color: black;
+  }
+</style>
 
 <body>
   <div class="heading">
@@ -141,34 +38,46 @@
 
   <div class="container">
     <div class="box">
-      <img src="Misc/index/work.jpg" alt="Work image" />
       <a href="Work">
-        <button>Work and Projects</button>
+        <img src="/Misc/index/work.jpg" alt="Work image" />
+        <center><button>Work and Projects</button></center>
       </a>
     </div>
     <div class="box">
-      <img src="Misc/index/notes.jpeg" alt="Notes image">
       <a href="Notes">
-        <button>Notes on various topics</button>
+        <img src="/Misc/index/notes.jpeg" alt="Notes image">
+        <center><button>Notes on various topics</button></center>
       </a>
     </div>
     <div class="box">
-      <img src="Misc/index/resume.jpg" alt="Resume image">
+      <a href="Honors/">
+        <img src="/Misc/honors/honors.jpg" alt="Honors image">
+        <center><button>Honors, CTFs, and Certs</button></center>
+      </a>
+    </div>
+    <div class="box">
       <a href="resume.html">
-        <button>Updated Resume</button>
+        <img src="/Misc/index/resume.jpg" alt="Resume image">
+        <center><button>Updated Resume</button></center>
       </a>
     </div>
     <div class="box">
-      <img src="Misc/index/cinema.jpg" alt="Cinema image">
       <a href="Cinema">
-        <button>Shows and Movies</button>
+        <img src="/Misc/index/cinema.jpg" alt="Cinema image">
+        <center><button>Shows and Movies</button></center>
+      </a>
+    </div>
+    <div class="box">
+      <a href="about.html">
+        <img src="/Misc/index/about.png" alt="About image">
+        <center><button>About Me</button></center>
       </a>
     </div>
 
     <!-- <div class="box">
-      <img src="Misc/index/GitHub.png" alt="GitHub image">
       <a href="Cinema">
-      <button>Movies<br>About a few movies and series I like</button>
+      <img src="Misc/index/GitHub.png" alt="GitHub image">
+        <center><button>Movies<br>About a few movies and series I like</button></center>
       </a>
     </div> -->
   </div>
@@ -176,7 +85,7 @@
 
 <footer>
   <div class="footer-heading">
-    <h3>Contact:</h3>
+    <h3 style="width: 70px;">Contact:</h3>
     <p>
       <a style="background-color: grey;" href="mailto:rs521@snu.edu.in" target="_blank"
         rel="noopener noreferrer nofollow">Mail</a> |

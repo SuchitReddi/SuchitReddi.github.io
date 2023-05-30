@@ -3,37 +3,24 @@
 
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-TF3WKZS5Q4');
-</script>
+    gtag('config', 'G-TF3WKZS5Q4');
+  </script>
 
   <meta charset="utf-8">
   <title>Projects/Papers</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <meta name="description" content="A webpage containing my projects, research papers, feeds, etc.">
   <meta name="author" content="Suchit Reddi">
 
-  <style>
-    html {
-      background-color: grey;
-    }
-
-    h2 {
-      text-align: center;
-      margin: 2px;
-    }
-
-    h3 {
-      text-align: center;
-      margin: 2px;
-    }
-
+  <!-- <style>
     .block {
       width: 25%;
       float: left;
@@ -74,84 +61,91 @@
         object-fit: contain;
       }
     }
-
-    button {
-      border-radius: 8px;
-      font-size: 12px;
-      padding: 1px;
-      max-width: 150px;
-    }
-
-    @media (max-width: 767px) {
-      button {
-        border-radius: 8px;
-        max-width: 100px;
-        font-size: 10px;
-      }
-    }
-  </style>
+  </style> -->
 </head>
 
 <body>
   <button><a href="https://suchitreddi.github.io/">Home</a></button><br>
-  <h2>Work and Projects</h2>
-  <h3>Cybersecurity</h3>
-  <div>
-    <div class="block">
-      <img src="../Misc/work/index/cybersentinel.jpg" alt="Image for Cyber Sentinel">
-      <button><a href="https://suchitreddi.github.io/cybersentinel/cybersentinel.html">Cyber Sentinel</a><br>Vulnerable webapp</button>
-    </div>
-    <div class="block">
-      <img src="../Misc/work/index/spoofing.jpg" alt="Image for Voice Spoofing Detection">
-      <button><a href="voice.html">Voice Spoofing Detection</a></button>
-    </div>
-    <div class="block">
-      <img src="../Misc/work/index/keyloggers.jpg" alt="Image for Keyloggers">
-      <button><a href="keyloggers.html">Keylogger Threats</a><br>Review paper on keyloggers</button>
-    </div>
-    <div class="block">
-      <img src="../Misc/work/index/coursera-dl.png" alt="Image for Coursera-dl">
-      <button><a href="coursera-dl.html">Coursera-dl</a><br>Coursera downloader in Python</button>
-    </div>
-    <div class="clearfix"></div> <!--The clearfix class sends the content next to this line to next line-->
 
-    <h3>Web & App Development</h3>
-    <div class="block">
-      <img src="../Misc/work/index/website.jpg" alt="Image for Personal Website">
-      <button><a href="website.html">Personal Website</a></button>
-    </div>
-    <div class="block">
-      <img src="../Misc/work/index/gdsc.png" alt="Image for GDSC Projects">
-      <button><a href="https://suchitreddi.github.io/GDSC_Developer_Cohort/">GDSC Projects</a><br>Dev Cohort
-        Projects</button>
-    </div>
-    <div class="block">
-      <img src="../Misc/work/index/editor.png" alt="Image for Java Text Editor">
-      <button><a href="editor.html">Text Editor</a><br>Java text editor</button>
-    </div>
-    <div class="clearfix"></div>
-
-    <h3>Miscellaneous</h3>
-    <div class="block">
-      <img src="../Misc/work/index/articles.jpg" alt="Image for Articles">
-      <button><a href="articles.html">Articles</a><br>Content Creation</button>
-    </div>
-    <div class="block">
-      <img src="../Misc/work/index/certifications.jpg" alt="Image for Certifications">
-      <button><a href="Certificates/">Certifications</a></button>
-    </div>
-    <div class="block">
-      <img src="../Misc/work/index/newsfeed.png" alt="Image for Cybersecurity RSS feeds">
-      <button><a href="newsfeeds.html">Newsfeeds</a><br>Cybersecurity RSS feeds</button>
-    </div>
-    <div class="clearfix"></div>
-    <p>
-      <!--<div class="block">
-      <img src="../Misc/work/index/" alt="Image for ">
-      <button><a href=""></a><br></button>
-    </div>-->
-    </p>
+  <div class="heading">
+    <h1>Work and Projects</h1>
+    <h2>Cybersecurity</h2>
   </div>
+
+  <div class="container">
+    <div class="box">
+      <a href="https://suchitreddi.github.io/cybersentinel/cybersentinel.html">
+        <img src="/Misc/work/index/cybersentinel.png" alt="Image for Cyber Sentinel">
+        <center><button>Cyber Sentinel<br>(Vulnerable webapp)</button></center></center>
+      </a>
+    </div>
+    <div class="box">
+      <a href="voice.html">
+        <img src="/Misc/work/index/spoofing.jpg" alt="Image for Voice Spoofing Detection">
+        <center><button>Voice Spoofing Detection</button></center>
+      </a>
+    </div>
+    <div class="box">
+      <a href="keyloggers.html">
+        <img src="/Misc/work/index/keyloggers.jpg" alt="Image for Keyloggers">
+        <center><button>Keylogger Threats<br>(Review paper on keyloggers)</button></center>
+      </a>
+    </div>
+    <div class="box">
+      <a href="coursera-dl.html">
+        <img src="/Misc/work/index/coursera-dl.png" alt="Image for Coursera-dl">
+        <center><button>Python Coursera downloader</button></center>
+      </a>
+    </div>
+  </div>
+
+  <h2>Web & App Development</h2>
+  <div class="container">
+    <div class="box">
+      <a href="website.html">
+      <img src="/Misc/work/index/website.jpg" alt="Image for Personal Website">
+      <center><button>Personal Website</button></center>
+      </a>
+    </div>
+    <div class="box">
+      <a href="https://suchitreddi.github.io/GDSC_Developer_Cohort/">
+      <img src="/Misc/work/index/gdsc.png" alt="Image for GDSC Projects">
+      <center><button>GDSC Projects</button></center>
+      </a>
+    </div>
+    <div class="box">
+      <a href="editor.html">
+      <img src="/Misc/work/index/editor.png" alt="Image for Java Text Editor">
+      <center><button>Java text editor</button></center>
+      </a>
+    </div>
+  </div>
+  
+  <h2>Miscellaneous</h2>
+  <div class="container">
+    <div class="box">
+      <a href="articles.html">
+      <img src="/Misc/work/index/articles.jpg" alt="Image for Articles">
+      <center><button>Articles<br>(Content Creation)</button></center>
+      </a>
+    </div>
+    <div class="box">
+      <a href="newsfeeds.html">
+      <img src="/Misc/work/index/newsfeed.png" alt="Image for Cybersecurity RSS feeds">
+      <center><button>Cybersecurity Feed</button></center>
+      </a>
+    </div>
+  </div>
+
+  <p>
+    <!--<div class="box">
+      <a href="">
+      <img src="/Misc/work/index/" alt="Image for ">
+      <center><button></button></center>
+      </a>
+    </div>-->
+  </p>
+
   <button><a href="https://suchitreddi.github.io/">Home</a></button><br>
 </body>
 

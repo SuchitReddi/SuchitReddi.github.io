@@ -3,78 +3,48 @@
 
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-TF3WKZS5Q4');
-</script>
+        gtag('config', 'G-TF3WKZS5Q4');
+    </script>
 
     <meta charset="utf-8">
     <title> Text Editor </title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <meta name="viewport" content="width=device-width, initial scale=1">
     <meta name="description" content="A text editor with basic functionalities, made using Java Swings in 1 day.">
     <meta name="author" content="Suchit Reddi">
-    <style>
-        html {
-            background-color: grey;
-        }
 
-        html {
-            background-image: url('../Misc/work/java.png');
-            background-size: contain;
-        }
-
-        body {
-            color: white;
-        }
-
-        .links {
-            color: gold;
-        }
-
-        .links:visited {
-            color: rgba(122, 216, 152, 0.967);
-        }
-
-        h1 {
-            text-align: center;
-            margin: -4px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        button {
-            border-radius: 8px;
-            padding: 1px;
-        }
-
-        .contain-box {
-            background-color: rgba(8, 83, 106, 0.447);
-            font-weight: 800;
-        }
-
-        @media (max-width: 767px) {
-            h1 {
-                margin: -4px;
-            }
-
-            h2 {
-                margin: -4px;
-            }
-        }
-    </style>
 </head>
+
+<style>
+    html {
+        background-image: url('../Misc/work/java.png');
+        background-size: contain;
+    }
+
+    body {
+        color: white;
+    }
+
+    .links {
+        color: gold;
+    }
+
+    .links:visited {
+        color: rgba(122, 216, 152, 0.967);
+    }
+</style>
 
 <body>
     <button><a href=".">Back</a></button><br>
     <button><a href="https://suchitreddi.github.io/">Home</a></button><br>
-    <div class="contain-box">
+    <div class="layer">
         <h1>Text Editor using Java GUI [9th Dec 2022]</h1>
         <h2>Project</h2>
         A graded assignment was given in the Object Oriented Programming course to create a Text Editor application
@@ -83,13 +53,13 @@
         day was free, without any exams.<br>
         So, the assignment was to create a text editor using Java GUI, in 1 day. (No copying from internet😉)<br>
         The following functionalities in the text editor are:<br>
-            <ol>
-                <li>Type a document and save it as a file of a certain type.</li>
-                <li>Load the document from the saved location.</li>
-                <li>Cut, Copy, Paste, and Delete.</li>
-                <li>Change font type, size and case of text.</li>
-                <li>Find, Replace, Replace-All for particular text.</li>
-            </ol>
+        <ol>
+            <li>Type a document and save it as a file of a certain type.</li>
+            <li>Load the document from the saved location.</li>
+            <li>Cut, Copy, Paste, and Delete.</li>
+            <li>Change font type, size and case of text.</li>
+            <li>Find, Replace, Replace-All for particular text.</li>
+        </ol>
         The code is available on
         <a class="links" href="https://github.com/SuchitReddi/Text_Editor/" target="_blank"
             rel="noopener noreferrer nofollow">GitHub<br>
