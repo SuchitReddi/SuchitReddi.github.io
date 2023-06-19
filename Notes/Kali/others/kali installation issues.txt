@@ -1,9 +1,21 @@
-During recent kali installation of kali 22.2 and kali kernel of 5.16.0-kali7-amd64, I experienced problems at installing grub bootloader stage with the exact message "grub install dummy failed"
+1. Kali Grub Rescue steps
+There are many reasons why you might end up on a kali grub rescue screen. The steps to solve it are:
+ls
+ls(hd0,gpt4) The output should be "Filesystem is ext2"
+set root=(hd0,gpt4)
+set boot=(hd0,gpt4)
+set prefix=(hd0,gpt4)/boot/grub
+insmod normal
+normal
+
+Now you will be successfully booting into Kali, but do the following steps before restarting or turning off the device. Go to terminal and use thes commands: sudo grub-install, sudo update-grub. 
+
+2. During recent kali installation of kali 22.2 and kali kernel of 5.16.0-kali7-amd64, I experienced problems at installing grub bootloader stage with the exact message "grub install dummy failed"
 I solved this error by going to uefi settings, enabling safe boot and clearing safe boot keys.After that, grub installed successfully.
 But, I observed no ethernet and wifi if installed without connecting to ethernet, but after connecting to ethernet, there was no wifi.
 I installed only gnome and I got both wifi and ethernet.
 
-After installing kali 23.1, I was not able to run sudo apt update, I got this error message: 
+3. After installing kali 23.1, I was not able to run sudo apt update, I got this error message: 
 
 Ign:1 http://kali.mirror.net.in/kali kali-rolling InRelease
 Ign:1 http://kali.mirror.net.in/kali kali-rolling InRelease
@@ -18,3 +30,9 @@ W: Failed to fetch http://http.kali.org/kali/dists/kali-rolling/InRelease  Conne
 W: Some index files failed to download. They have been ignored, or old ones used instead.
 
 To resolve this issue, I thought of editing the /etc/apt/sources.list file's repositories, but editing `deb http://http.kali.org/kali kali-rolling main non-free contrib` to `deb https://http.kali.org/kali kali-rolling main non-free contrib` solved the issue.
+
+4. After installing vbox extras cd from devices, the bootup of Kali took nearly 5mins due to failing vboxservice.
+To solve this: Go into VBox_GAs in file manager, and open terminal there. Run this command: sudo sh VBoxLinuxAdditions.run uninstall. If this doesn't work, try the next step.
+Go to the cd through file manager, and open terminal there. When try to uninstall, if it gives an error like uninstall.sh is missing, just create an empty file and redo the process. 
+
+5. If you're unable to boot into kali after downloading it into ssd, you will have to create a 500mb EFI file system partition, which might not be visible if you do this via a VM (using ISO, connecting the ssd as a usb, then running the VM without a vdi harddisk). So, you might have to make a bootable usb for kali and do it on an actual laptop.
