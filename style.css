@@ -170,3 +170,17 @@ li a:link {
         width: 90%;
     }
 }
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.overlay a:link {
+    color: white;
+}
+
+.overlay a:visited {
+    color: fuchsia;
+}

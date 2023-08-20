@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TF3WKZS5Q4');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Ghunt</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ghunt is for finding more info from mail, gaia or a drive file">
+    <meta name="author" content="Suchit Reddi">
+</head>
+
+<body>
+    <button><a href="..">Back</a></button><br>
+    <button><a href="https://suchitreddi.github.io/">Home</a></button><br>
+
+    <div class="overlay">
+        <h1> GHunt </h1>
+        <p> <a href="https://github.com/mxrch/GHunt" target="_blank" rel="noopener nofollow noreferrer">GHunt</a> is for
+            finding more google info like google maps reviews, a probable location, google play data if availabe when
+            you give a <b>mail id, gaia id, or drive file</b>.<br>
+            I stumbled upon this tool in a <a
+                href="https://hacklido.com/blog/272-phone-number-osint-my-methodology-for-investigations"
+                target="_blank" rel="noopener nofollow noreferrer">blog</a> on Phone Number OSINT.
+            You can find the steps to download this tool
+            <a href="https://hacklido.com/blog/260-ghunt-20-gmail-osint-guide-part-1" target="_blank"
+                rel="noopener nofollow noreferrer">here</a>.<br>
+            The above links should cover how to download and install GHunt. Now, what if you have only a phone
+            number?<br>
+            There is a trick in the blog mentioned above. I will explain the process briefly, but check that blog for a more detailed explanation.<br>
+            Go to gmail login page and enter the phone number as the username. If there is an account with that number, it should show a welcome page. Else it will show "couldn't find your google account" error.<br>
+            If you get the welcome page, then right click and select "view page source", or something similar to this.<br>
+            The blog says to search for base-js here, but I found it more confusing. What I did was slightly different.<br>
+            First use word wrap to make the code more readable. Then search for "xsrf" in the code. You should find something like this:<br>
+            <img style="width: 90%;" src="/Misc/notes/tools/gaia_id.jpg" alt="gaia id"><br>
+            If you don't find this, maybe you didn't sign in and sign out to a google account before doing this as mentioned in the blog. Or there might be some other error.<br>
+            Once you get the gaia id, you can use it in GHunt with the command "ghunt gaia `gaia id here`".<br><br>
+            Some other issues you can face are during the "ghunt login" step. The prerequisites here are you should be logged in to your google account on the browser. You should have the GHunt Companion extension as mentioned in the second blog. When using the extension, it will tell you that the cookie value is copied to clipboard. You can paste it in the terminal using "ctrl+shift+v".<br>
+            If you are logged out of the account in the browser afterwards, ghunt will say the cookie value is invalid. You will need to repeat this process again then.<br>
+            The results of this tool will look like this:
+            <img style="width: 90%;" src="/Misc/notes/tools/ghunt_result.png" alt="ghunt result"><br>
+
+        </p>
+    </div>
+    <button><a href="..">Back</a></button><br>
+    <button><a href="https://suchitreddi.github.io/">Home</a></button><br>
+</body>
+
+</html>
