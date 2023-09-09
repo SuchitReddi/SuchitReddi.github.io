@@ -25,10 +25,19 @@
 
 <style>
   html {
-    background-image: url('Misc/index/index.png');
+    background-image: url('Misc/index/index.jpg');
     background-size: contain;
-    background-color: black;
   }
+
+  .box {
+    opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+    .box {
+        opacity: 0.8;
+    }
+}
 </style>
 
 <body>
@@ -85,15 +94,13 @@
 
 <footer>
   <div class="footer-heading">
-    <h3 style="width: 70px;">Contact:</h3>
-    <p>
-      <a style="background-color: grey;" href="mailto:rs521@snu.edu.in" target="_blank"
-        rel="noopener noreferrer nofollow">Mail</a> |
-      <a style="background-color: grey;" href="https://github.com/SuchitReddi" target="_blank"
-        rel="noopener noreferrer nofollow">GitHub</a> |
-      <a style="background-color: grey;" href="https://www.linkedin.com/in/suchitreddi/" target="_blank"
-        rel="noopener noreferrer nofollow">LinkedIn</a>
-    </p>
+    <h3>Contact:</h3>
+      <a href="mailto:rs521@snu.edu.in" target="_blank"
+        rel="noopener noreferrer nofollow"><button>Mail</button></a> |
+      <a href="https://github.com/SuchitReddi" target="_blank"
+        rel="noopener noreferrer nofollow"><button>GitHub</button></a> |
+      <a href="https://www.linkedin.com/in/suchitreddi/" target="_blank"
+        rel="noopener noreferrer nofollow"><button>LinkedIn</button></a>
   </div>
 </footer>
 

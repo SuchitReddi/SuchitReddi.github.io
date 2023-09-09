@@ -19,15 +19,16 @@ h3 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    /* overflow: auto; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 10px; */
+    overflow: auto;
 }
 
 @media (max-width: 767px) {
     .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        overflow: auto;
     }
 }
 
@@ -54,8 +55,8 @@ h3 {
 
 @media (max-width: 767px) {
     .box img {
-        width: 100px;
-        height: 100px;
+        width: 160px;
+        height: 160px;
         object-fit: contain;
     }
 }
@@ -77,8 +78,8 @@ button {
         background: linear-gradient(lightblue 0 0) var(--p, 0) / var(--p, 0) no-repeat;
         transition: 0.5s, background-position 0s;
         background-color: white;
-        max-width: 150px;
-        font-size: 10px;
+        max-width: 175px;
+        font-size: 17px;
         border-radius: 8px;
     }
 }
@@ -101,8 +102,8 @@ footer {
 .heading h1 {
     background-color: black;
     color: white;
-    margin-left: 38%;
-    margin-right: 38%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
 }
 
@@ -110,29 +111,24 @@ footer {
     .heading h1 {
         background-color: black;
         color: white;
-        margin-left: 5%;
-        margin-right: 5%;
     }
 }
 
 .footer-heading {
     text-align: center;
     padding: 10px 10px;
+    color: white;
 }
 
 .footer-heading h3 {
-    background-color: black;
     color: white;
-    margin-left: 47%;
-    margin-right: 47%;
     border-radius: 8px;
 }
 
 @media (max-width: 767px) {
     .footer-heading h3 {
         color: white;
-        margin-left: 35%;
-        margin-right: 35%;
+        border-radius: 8px;
     }
 }
 
@@ -157,11 +153,6 @@ ol li iframe {
 
 li a:link {
     color: white;
-}
-
-.layer {
-    background-color: rgba(8, 83, 106, 0.447);
-    font-weight: 800;
 }
 
 @media (max-width: 767px) {
