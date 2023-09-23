@@ -36,3 +36,19 @@ To solve this: Go into VBox_GAs in file manager, and open terminal there. Run th
 Go to the cd through file manager, and open terminal there. When try to uninstall, if it gives an error like uninstall.sh is missing, just create an empty file and redo the process. 
 
 5. If you're unable to boot into kali after downloading it into ssd, you will have to create a 500mb EFI file system partition, which might not be visible if you do this via a VM (using ISO, connecting the ssd as a usb, then running the VM without a vdi harddisk). So, you might have to make a bootable usb for kali and do it on an actual laptop.
+
+6. Let's say you deleted linux by removing the partitions from windows, there is a chance you will face the grub screen every time you power on. To remove the linux boot, follow these steps (https://www.youtube.com/watch?v=HcCouXSpZOY):
+diskpart
+list disk
+select disk # (whichever is system drive C:)
+list partition
+select partition # (the partition having type System)
+assign letter=s
+exit
+
+S:
+cd EFI
+dir (you will see the linux distro name here)
+rd <distro_name> /s
+
+now restart the device.
