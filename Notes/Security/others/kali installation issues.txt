@@ -29,7 +29,9 @@ All packages are up to date.
 W: Failed to fetch http://http.kali.org/kali/dists/kali-rolling/InRelease  Connection failed [IP: 103.195.68.3 80]
 W: Some index files failed to download. They have been ignored, or old ones used instead.
 
-To resolve this issue, I thought of editing the /etc/apt/sources.list file's repositories, but editing `deb http://http.kali.org/kali kali-rolling main non-free contrib` to `deb https://http.kali.org/kali kali-rolling main non-free contrib` solved the issue.
+To resolve this issue, I thought of editing the /etc/apt/sources.list file's repositories, but editing `deb http://http.kali.org/kali kali-rolling main non-free contrib` to `deb https://http.kali.org/kali kali-rolling main non-free contrib` solved the issue. This might not solve it, if so, go to the next step.
+sudo nano /etc/resolv.conf
+here, add 'nameserver 8.8.8.8'.
 
 4. After installing vbox extras cd from devices, the bootup of Kali took nearly 5mins due to failing vboxservice.
 To solve this: Go into VBox_GAs in file manager, and open terminal there. Run this command: sudo sh VBoxLinuxAdditions.run uninstall. If this doesn't work, try the next step.
@@ -50,5 +52,13 @@ S:
 cd EFI
 dir (you will see the linux distro name here)
 rd <distro_name> /s
-
 now restart the device.
+
+7. zsh:corrupt history file
+A much smaller issue but a very irritating one. What this error does is, it does not show you the updated results for history command after a certain point.
+So, to fix that use the following commands:
+
+cd ~
+mv .zsh_history .zsh_history_old
+strings .zsh_history_old > .zsh_history
+fc -R .zsh_history

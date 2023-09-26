@@ -23,3 +23,17 @@ time as I got confused with the ones set in the imager tool using advanced optio
 I found out it was incorrect the hard way.
 
 What finally worked was the default credentials kali and kali for any kali image.
+
+Now this is only one part, I only got the ssh access to the pi board. Now I need visuals, hence I need VNC.
+Connecting to VNC came with it's own set of problems. What worked for me is:
+
+In PuTTY, go to Connections/SSH/X11. Here enable port forwarding and give the value `:0.0` for display location.
+MIT-Magic-Cookie-1 as authentication protocol. Now download Xming.exe for windows and give the path for authority file.
+Run Xming application before starting this process. 
+`/usr/lib/vino/vino-server` (This started the server, without this an error pops up saying connection is being actively refused)
+Then I used RealVNC Viewer and gave the PI's IP address. Then you will get an error about security of the connection.
+`gsettings set org.gnome.Vino require-encryption false` (This issue will solve the above error)
+Now give the IP address, the VNC window started, but it gave a black screen.
+This was solved by going to the terminal and opening raspi-config
+`sudo kalipi-config` or `sudo raspi-config`
+Select advanced, and go to resolution. There select `DMT Mode 85 1280x720 60Hz 16:9`
