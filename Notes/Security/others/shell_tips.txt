@@ -12,8 +12,11 @@ nano ~/.bashrc
 
 add exec zsh after #for examples in the third line and save
 
+**oh-my-zsh**
 After you have zsh, you will observe that there won't be automatic saving of history, or you won't
 see your pwd as prompt. You can use oh-my-zsh (search on github) as an alternative.
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 **CUSTOM PROMPT**
 If you want to change the prompt, follow the below steps.
