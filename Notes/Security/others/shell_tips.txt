@@ -1,0 +1,51 @@
+**AUTOSUGGESTIONS**
+for autosuggestions before typing full words:(check web for more accurate description)
+
+apt-get install zsh
+apt-get install zsh-syntax-highlighting
+apt-get install zsh-autosuggestions
+cp ~/.zshrc ~/.zshrcbackup
+echo "source $(dpkg -L zsh-autosuggestions | grep 'zsh$')" | tee -a ~/.zshrc
+echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" | tee -a ~/.zshrc
+source ~/.zshrc
+nano ~/.bashrc
+
+add exec zsh after #for examples in the third line and save
+
+After you have zsh, you will observe that there won't be automatic saving of history, or you won't
+see your pwd as prompt. You can use oh-my-zsh (search on github) as an alternative.
+
+**CUSTOM PROMPT**
+If you want to change the prompt, follow the below steps.
+echo $PROMPT (will show you the current prompt)
+
+First comment out the line saying ZSH_THEME="robbyrussell", because custom prompt was not working if 
+there is a theme.
+Go to .zshrc file present in home/$user/, there add this line anywhere.
+PROMPT="%(?:%{%}➜ :%{%}➜ )%m@%T-%{%}%c%{%}:"
+or
+PROMPT="%m@%T-%B%30<..<%~%b %(!.#.>)"
+
+Both of these prompts will give the same output, which will look like:
+user@time-pwd: which will be like pi@13:35-tools:
+
+One cool prompt I use will be of this form:
+
+┌──(kali㉿kali - 19:27)-[~]
+└─$ whoami
+sherl0ck
+
+The prompt for this appearance is: 
+
+PROMPT="%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n㉿%m %T%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]
+└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} "
+
+**RUNNING SOMETHING ON EVERY BOOT OR TERMINAL OPEN**
+If you want to run some custom script every time the device boots up or every time a new terminal opens,
+lets say a python script test.py at /home/<usr>/test.py.
+Just add a new line to the ending of .bashrc or .zshrc (whatever your default shell is)
+
+echo Running at boot...
+sudo python /home/pi/test.py
+
+

@@ -1,3 +1,14 @@
+**FOR RASPBERRY PI OS** (Previously Raspbian)
+
+1) Install Pi Imager tool, Putty and VNC Viewer
+Download and install Raspberry Pi Imager tool for flashing the OS images. You will need Putty and VNC Viewer to access Pi.
+
+1) Flashing OS
+Flash os onto the sd card using raspberry pi imager tool. Enable ssh from advanced options (Press ctrl+shift+x in the imager).
+
+
+**FOR KALI LINUX**
+
 I wanted to install kali linux on raspberry pi to work on the NAND memory forensics project.
 I did not have access to a monitor, so I searched for alternatives, and found that ssh and vnc can be used.
 In the beginning, I just installed the raspberry pi imager tool and just flashed the kali os from 
@@ -5,7 +16,7 @@ In the beginning, I just installed the raspberry pi imager tool and just flashed
 became a hassle. The default credentials "pi" and "raspberry" were removed and no default user was created.
 And SSH was disabled after the Mirai outbreak in IoT devices.
 
-The connections I made were ethernet between the pi boared and laptop, and power supply to the pi. 
+The connections I made were ethernet between the pi board and laptop, and power supply to the pi. 
 Putty installation is also required. The first hurdle I faced was after flashing the image. 
 I went to network and sharing center in control panel. Clicked on the Wi-Fi connection. Then went to sharing inside
 properties. I had to enable both the check boxes there. Then select your ethernet connection from the dropdown.
@@ -32,8 +43,12 @@ MIT-Magic-Cookie-1 as authentication protocol. Now download Xming.exe for window
 Run Xming application before starting this process. 
 `/usr/lib/vino/vino-server` (This started the server, without this an error pops up saying connection is being actively refused)
 Then I used RealVNC Viewer and gave the PI's IP address. Then you will get an error about security of the connection.
-`gsettings set org.gnome.Vino require-encryption false` (This issue will solve the above error)
-Now give the IP address, the VNC window started, but it gave a black screen.
+`gsettings set org.gnome.Vino require-encryption false` (This command will solve the above error)
+Now give the IP address. The VNC window started, but it gave a black screen.
 This was solved by going to the terminal and opening raspi-config
 `sudo kalipi-config` or `sudo raspi-config`
 Select advanced, and go to resolution. There select `DMT Mode 85 1280x720 60Hz 16:9`
+Now there is a VNC screen showing the virtual connection, but something is still wrong and you can't type anything
+in the terminal. The background image goes black after a few seconds. This issue is yet to be fixed.
+
+It will be better if I can eliminate the need for ethernet cable and directly connect to the pi from some Wi-Fi.
