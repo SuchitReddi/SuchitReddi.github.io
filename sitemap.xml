@@ -9,492 +9,647 @@
 
 <url>
   <loc>https://suchitreddi.github.io/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Work/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Notes/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Honors/</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/resume.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Cinema/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/about.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/cybersentinel/cybersentinel.html</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Work/memory_forensics.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Work/voice.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Work/keyloggers.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Work/coursera-dl.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Work/website.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/GDSC_Developer_Cohort/</loc>
-  <lastmod>2023-04-04T13:56:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Work/editor.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Work/articles.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Work/Certificates/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Work/newsfeeds.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/tips.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Work/drop.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/index.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Work/automation.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Courses/OSINT.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Work/website.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Courses/API.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Work/articles.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Courses/SE.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Work/editor.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Courses/Embedded.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Work/coursera-dl.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Courses/</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/encrypt_password.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Notes/Aadhaar.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/GDSC_Developer_Cohort/Format%20of%20a%20basic%20HTML%20page.pdf</loc>
-  <lastmod>2023-04-04T13:56:44+00:00</lastmod>
+  <lastmod>2023-10-20T06:06:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/webdev_tips.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Honors/ctf/index.html</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Honors/certs/index.html</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Honors/internships/index.html</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/.</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/index/Suchit%20Reddi%20Resume.docx</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Cinema/MrRobot/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://suchitreddi.github.io/cybersentinel/README.html</loc>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
   <loc>https://suchitreddi.github.io/cybersentinel/docs/plan.html</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/cybersentinel/docs/cybersentinel_documentation.html</loc>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/cybersentinel/docs/problem_statement.html</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/cybersentinel/docs/srs.html</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/cybersentinel/docs/dfd.html</loc>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/cybersentinel/docs/setupw.html</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/cybersentinel/docs/setupl.html</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Work/.</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/voice/Voice_spoofing_paper.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/voice/Presentation.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Misc/work/voice/Presentation.pptx</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/keyloggers/Base.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/keyloggers/Paper1.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/keyloggers/Paper2.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/keyloggers/Paper3.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/keyloggers/Paper4.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/keyloggers/Paper5.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/work/keyloggers/Keyloggers.pdf</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Work/Certificates/IBM.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Cinema/MrRobot/eps1/index.html</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Cinema/MrRobot/eps1/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/tools/</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/basic.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Courses/OSINT.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Courses/API.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Courses/SE.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Courses/Embedded.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Notes/.</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/history.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Misc/notes/se/Software%20Engineering.docx</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://suchitreddi.github.io/Misc/notes/embedded/Embedded.docx</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/Misc/notes/aadhaar/Aadhaar%20Breach.pptx</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/cybersentinel/docs/CyberSentinel.docx</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Honors/ctf/vishwactf.html</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Honors/ctf/n00bzctf.html</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Honors/certs/IBM.html</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Misc/honors/certs/udemy_metasploit.pdf</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Cinema/MrRobot/eps1/</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/cybersentinel/</loc>
+  <lastmod>2023-04-30T06:50:49+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/cybersentinel/docs/Problem%20Statement.docx</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/cybersentinel/docs/plan.docx</loc>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/cybersentinel/docs/cybersentinel_documentation.docx</loc>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/cybersentinel/docs/prob.docx</loc>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://suchitreddi.github.io/cybersentinel/docs/srs.docx</loc>
-  <lastmod>2023-04-23T11:33:14+00:00</lastmod>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Work/Certificates/.</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/cybersentinel/docs/dfd.docx</loc>
+  <lastmod>2023-04-30T06:50:45+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/.</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/tools/osint/ghunt.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/history.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/tools/osint/seeker.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/.</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/autosuggestions.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/kali%20installation%20issues.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/boot%20timeout%20change.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/raspberrypi_kali_headless.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/changing%20MAC%20address.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/history.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/crunch%20for%20wordlist.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/boot%20timeout%20change.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/finding%205G%20networks%20in%20airodump-ng.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/install_deb.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/hashcat%20for%20bruteforce.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/shell_tips.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/installing%20adapter%20drivers.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/installing%20adapter%20drivers.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/installing%20apps.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/kali%20version%20info.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/kali%20installation%20issues.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/no%20passwd%20in%20terminal.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/kali%20version%20info.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/unlocking%20root%20user%20and%20folder%20access%20in%20kali.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/monitor%20mode.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/unlocking%20root%20user%20in%20ubuntu.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/no%20passwd%20in%20terminal.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/changing%20MAC%20address.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/public%20ip%20in%20CLI.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/crunch%20for%20wordlist.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/set%20monitor%20mode%20on%20adapter.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/finding%205G%20networks%20in%20airodump-ng.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/unlocking%20root%20user%20and%20folder%20access%20in%20kali.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/hashcat%20for%20bruteforce.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/unlocking%20root%20user%20in%20ubuntu.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/installing%20apps.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/using%20aircrack-ng.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/public%20ip%20in%20CLI.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/using%20wlan0mon.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/monitor%20mode.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/virtualbox%20W10.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/set%20monitor%20mode%20on%20adapter.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/WEP%20protected%20wifi.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/using%20aircrack-ng.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/WPA%20and%20WPA2%20protected%20wifi.html</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/using%20wlan0mon.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/.</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/virtualbox%20W10.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/WEP%20protected%20wifi.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/WPA%20and%20WPA2%20protected%20wifi.html</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Courses/.</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Misc/notes/se/Software%20Engineering.docx</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Misc/notes/embedded/Embedded.docx</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Honors/ctf/.</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Misc/honors/certs/vishwactf.pdf</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Honors/certs/.</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Misc/honors/certs/IBM.pdf</loc>
+  <lastmod>2023-10-20T13:40:16+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/kali%20installation%20issues.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/autosuggestions.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/.</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/boot%20timeout%20change.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/raspberrypi_kali_headless.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/changing%20MAC%20address.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/history.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/crunch%20for%20wordlist.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/boot%20timeout%20change.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/finding%205G%20networks%20in%20airodump-ng.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/install_deb.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/hashcat%20for%20bruteforce.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/shell_tips.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/installing%20adapter%20drivers.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/installing%20adapter%20drivers.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/installing%20apps.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/kali%20version%20info.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/kali%20installation%20issues.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/no%20passwd%20in%20terminal.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/kali%20version%20info.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/unlocking%20root%20user%20and%20folder%20access%20in%20kali.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/monitor%20mode.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/unlocking%20root%20user%20in%20ubuntu.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/no%20passwd%20in%20terminal.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/changing%20MAC%20address.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/public%20ip%20in%20CLI.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/crunch%20for%20wordlist.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/set%20monitor%20mode%20on%20adapter.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/finding%205G%20networks%20in%20airodump-ng.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/unlocking%20root%20user%20and%20folder%20access%20in%20kali.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/hashcat%20for%20bruteforce.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/unlocking%20root%20user%20in%20ubuntu.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/installing%20apps.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/using%20aircrack-ng.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/public%20ip%20in%20CLI.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/using%20wlan0mon.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/monitor%20mode.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/virtualbox%20W10.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/set%20monitor%20mode%20on%20adapter.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/WEP%20protected%20wifi.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/using%20aircrack-ng.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
-  <loc>https://suchitreddi.github.io/Notes/Kali/others/WPA%20and%20WPA2%20protected%20wifi.txt</loc>
-  <lastmod>2023-04-23T12:12:24+00:00</lastmod>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/using%20wlan0mon.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/virtualbox%20W10.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/WEP%20protected%20wifi.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://suchitreddi.github.io/Notes/Security/others/WPA%20and%20WPA2%20protected%20wifi.txt</loc>
+  <lastmod>2023-10-20T13:40:17+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 
