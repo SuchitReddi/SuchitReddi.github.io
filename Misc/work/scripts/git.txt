@@ -1,0 +1,1 @@
+start "" "D:\Program Files\Git\usr\bin\bash" -login

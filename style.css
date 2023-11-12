@@ -65,6 +65,8 @@ button {
     background: linear-gradient(lightblue 0 0) var(--p, 0) / var(--p, 0) no-repeat;
     transition: 0.5s, background-position 0s;
     background-color: white;
+    color: black;
+    
     border-radius: 8px;
     font-size: 13px;
     margin: 2px;
@@ -138,7 +140,7 @@ iframe {
     height: 445px;
 }
 
-.contain-box a:link {
+.white-links a:link {
     color: white;
 }
 
@@ -152,7 +154,7 @@ ol li iframe {
 }
 
 li a:link {
-    color: white;
+    color: black;
 }
 
 @media (max-width: 767px) {
