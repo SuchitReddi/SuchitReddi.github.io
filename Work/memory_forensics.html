@@ -3,15 +3,15 @@
 
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF3WKZS5Q4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-TF3WKZS5Q4');
-</script>
+    gtag('config', 'G-TF3WKZS5Q4');
+  </script>
 
   <meta charset="utf-8">
   <title> Forensic Issues of IoT devices using NAND Flash Memory </title>
@@ -24,13 +24,60 @@
 
 <body>
   <button><a href=".">Back</a></button><br>
-  
+
   <div class="white-links">
-  <h1>Forensic Issues of IoT devices using NAND Flash Memory [Aug 2023 - Ongoing]</h1>
-  <h2>Research</h2>
-  <p>
-    Work in progress.
-    <!-- This is the <a href="../Misc/work/voice/Voice_spoofing_paper.pdf" target="_blank" rel="noopener noreferrer nofollow"
+    <h1>Forensic Issues of IoT devices using NAND Flash Memory [Aug 2023 - Ongoing]</h1>
+    <h2>Research</h2>
+    <p>
+      <b>Working of SSD</b><br>
+      Flash memory used in SSDs is cheap with high read/write speeds. This makes it ideal for usage in IoT devices.<br>
+      However it's working is different from the old magnetic disks used in HDDs. If you edit a file on a HDD,
+      it is actually deleted and overwritten.<br>
+      But in SSDs, the data can be deleted only in blocks but not as individual cells. If overwrite of edit a file in
+      SSD, you have to delete the entire block just to edit few bits.<br>
+      This results in a lot of program and erase (PE) cycles. SSDs have limited PE cycles. So, overwriting is done
+      differently.<br>
+      When a file is edited, the controller marks the old block as invalid and writes the new data to a different
+      location.<br>
+      When the system asks for the updated file, it gives the new location. But the old data is still present in the old
+      location.<br>
+      <br>
+
+      <b>Forensic Issues</b><br>
+      When you delete a file, the controller marks the file pointer as invalid without actually deleting it.<br>
+      The actual deletion happens when the SSD is idle, in the background. Processes like garbage collection, TRIM, and
+      wear leveling are involved.<br>
+      Once a block is marked invalid, you have to hack the flash controller to access it. There are few methods to
+      access unmanaged blocks that need sophisticated hardware and expertise to operate.<br>
+      Unlike HDDs, write blockers have no impact on the wear levelling process. It happens in the background and cannot
+      be stopped.<br>
+      So theoretically if you leave your device idle for a long time, the SSD itself should make your deleted data
+      unrecoverable.<br>
+      <br>
+
+      <b>Secure deletion</b><br>
+      On HDDs, writing random or (0/1)s to the entire disk is enough to make the data unrecoverable. Because there is no
+      invalidation of blocks.<br>
+      So, it is fairly easy to securely delete data in HDDs. But in SSDs, it is very hard but possible to access these
+      unmanaged/invalid blocks.<br>
+      I think cryptographic deletion is one very effective way to make data inaccessible from SSDs.<br>
+      There are various tools which can be used to securely delete data on various type of storage devices. I found a
+      few tools for a few common devices.<br>
+      <br>
+
+      <b>Verification</b><br>
+      To verify if data is still accessible, I used an open source forensics tool called "Autopsy".<br>
+      To be added...<br>
+      <br>
+      
+      <b>Misc</b><br>
+      I thought of using physical NAND chip in the beginning, but faced many hurdles along the way. I still have to
+      add them all whenver I find time.<br>
+      <br>
+      Work in Progress...
+
+
+      <!-- This is the <a href="../Misc/work/voice/Voice_spoofing_paper.pdf" target="_blank" rel="noopener noreferrer nofollow"
       style="line-height: 2em;">research paper</a> I used as a reference for the project.<br>
     I summarised the project into a <a href="../Misc/work/voice/Presentation.pdf" target="_blank"
       rel="noopener noreferrer nofollow" style="line-height: 2em;">presentation</a>.
@@ -39,10 +86,10 @@
     I was able to reproduce the experiment done for this project on my
     <a href="https://github.com/SuchitReddi/Voice_Spoofing_Detection" target="_blank" rel="noopener noreferrer nofollow"
       style="line-height: 2em;">GitHub<br></a> -->
-  </p>
+    </p>
   </div>
   <button><a href=".">Back</a></button><br>
-  
+
 </body>
 
 </html>
