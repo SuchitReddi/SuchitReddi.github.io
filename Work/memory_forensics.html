@@ -30,9 +30,14 @@
     <h2>Research</h2>
     <p>
 
-      <b>Note: You can find 
-      "<a href="https://github.com/suchitreddi/memorywipe" target="_blank" rel="nofollow noopener nofollow">Memory Wipe</a>",
-       the sanitization tool I developed on my GitHub, along with necessary documents.</b><br>
+      <b>Note: You can find
+        "<a href="https://github.com/suchitreddi/memorywipe" target="_blank" rel="nofollow noopener nofollow">Memory
+          Wipe</a>",
+        the sanitization tool I developed on my GitHub, along with necessary documents 
+        (<a href="../Misc/work/memorywipe/Storage_Forensics_Report.pdf" target="_blank"
+          rel="nofollow noopener nofollow">Report</a>, 
+         <a href="../Misc/work/memorywipe/Storage_Forensics_Presentation.pdf" target="_blank"
+          rel="nofollow noopener nofollow">Presentation</a>).</b><br>
       <br>
 
       <b>Working of SSD</b><br>
@@ -54,9 +59,8 @@
       The actual deletion happens when the SSD is idle, in the background. Processes like garbage collection, TRIM, and
       wear leveling are involved.<br>
       Once a block is marked invalid, it is inaccessible to the operating system. You have to hack the flash controller
-       to access it. There are methods requiring sophisticated hardware and expertise to access unmanaged blocks. <br>
-      Unlike HDDs, write blockers have no impact on the wear levelling process. It happens in the background and cannot
-      be stopped.<br>
+      to access it. There are methods requiring sophisticated hardware and expertise to access unmanaged blocks. <br>
+      Unlike HDDs, write blockers have no impact on stopping wear levelling.<br>
       So theoretically if you leave your device idle for a long time, the SSD itself should delete your data.
       But there is no fixed time after which the file is actually erased.<br>
 
@@ -79,19 +83,23 @@
       including ARM devices (Raspberry Pi).<br>
       The encrypted drive, along with the key is overwritten with a pass of random values and zeroes. The drive is
       then formatted into a usable filesystem format.<br>
-      <br>
+
+      <b>Automatic Wiping</b><br>
+      This option checks compatibility of the device with different sanitization methods in the tool and apply the most
+      compatible one.<br>
       <br>
 
       <b>Verification</b><br>
       To verify if data is still accessible, I used an open source forensics tool called "Autopsy".<br>
       There are better tools like Cellebrite, and Magnet Axiom, but they are neither open source, nor cheap.<br>
       I plan on adding a terminal based forensic tool like PhotoRec, and Sleuth Kit's Scalpel. This allows
-      verification on the same device on which sanitization takes place.<br> 
+      verification on the same device on which sanitization takes place.<br>
       <br>
-      
+
       <b>Future Prospects</b><br>
       To be 100% certain of data sanitization, a disk read at physical level is required. It should either be done
-      using a costly chip reader like PC-3000, or a custom FPGA board connected to the chip using a TSOP DIP48 adapter.<br>
+      using a costly chip reader like PC-3000, or a custom FPGA board connected to the chip using a TSOP DIP48
+      adapter.<br>
       <br>
       Work in Progress...
 
