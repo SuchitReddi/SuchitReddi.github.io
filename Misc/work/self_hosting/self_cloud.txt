@@ -67,63 +67,9 @@ under which all these private ip's are provided. So, the networks outside the St
 see the devices inside the Student network as individual devices. To overcome this limitation, 
 I think ngrok or some kind of ddns service (nginx, duckdns) can be utilized.
 
-**ngrok**
-->To download ngrok:
-curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
-
-->Sign up to ngrok, you will get an authentication token. You should add it to the config file.
-ngrok config add-authtoken <token>
-
-->A test tunnel can be started using:
-ngrok http 80
-
-->To get a domain for the pi's ip, go to ngrok.com and login. There you can see domains in Cloud Edge.
-There create a new domain. To start the tunnel using the domain:
-ngrok http --domain=some-website-name.ngrok-free.app 80
-To share the files in a location:
-ngrok http --domain=some-website-name.ngrok-free.app /media/<user>/share/
-
-Now you can access the website from networks out of your local network by searching for the <some-website-name>
-in your browser.
-
-->You can also set up a domain name kind of thing to your device ip, that can be done by adding this to your config.
-ngrok config edit
-
-The contents should be:
-version: "2"
-authtoken: your_token
-
-tunnels:
- vnc:
-  proto: tcp
-  addr: 22
- ssh:
-  proto: tcp
-  addr: 5900
- site:
-  proto: http
-  addr: 80
-  domain: some-website-name.ngrok-free.app
-
-->To check configuration file, use "ngrok config check"
-Note: you can start these tunnels manually by running the below commands - 
-ngrok start --all or ngrok start --config=/home/<user>/.config/ngrok/ngrok.yml --all
-
-To create a service:
-sudo nano /etc/systemd/system/ngrok.service
-
-Contents inside are:
-[Unit]
-Description=ngrok
-After=network.target
-[Service]
-ExecStart=/usr/local/bin/ngrok start --config=/home/<user>/.config/ngrok/ngrok.yml --all
-[Install]
-WantedBy=multi-user.target
-
-sudo systemctl daemon-reload && sudo systemctl enable ngrok && sudo systemctl start ngrok && sudo systemctl status ngrok
+Check the Self-Hosted Website project for info on how to use ngrok to host services simultaneously on
+two different domain names. (https://suchitreddi.github.io/Work/self_site.html)
 
 More resources for reverse proxy with filebrowser:
 https://www.cloudbooklet.com/how-to-install-file-browser-on-ubuntu-22-04-with-nginx/
-
 

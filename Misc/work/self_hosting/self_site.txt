@@ -2,9 +2,6 @@ If you want to host your own website using raspberry pi, one way is to run an ap
 then use ngrok's dns service to give it a name instead of typing in the ip address which will
 limit the access to only local networks.
 
-**ngrok**
-Sign up to ngrok and create a free domain there. You should run this site before starting nginx.
-
 **nginx**
 
 sudo apt install nginx
@@ -77,3 +74,91 @@ In the five places, 1st one is for minutes, 2nd one is for hours, and so on.
 So if you want it to run every 12 hours, change it like this:
 
 0 */12 * * * /home/<user>/tools/nginx/gitpull.sh
+
+
+**ngrok**
+
+->To download ngrok:
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
+
+->Sign up to ngrok, you will get an authentication token. You should add it to the config file.
+ngrok config add-authtoken <token>
+
+->A test tunnel can be started using:
+ngrok http 80
+
+->To get a domain for the pi's ip, go to ngrok.com and login. There you can see domains in Cloud Edge.
+There create a new domain. To start the tunnel using the domain:
+ngrok http --domain=some-website-name.ngrok-free.app 80
+To share the files in a location:
+ngrok http --domain=some-website-name.ngrok-free.app /media/<user>/share/
+
+Now you can access the website from networks out of your local network by searching for the <some-website-name>
+in your browser.
+
+->You can also set up a domain name kind of thing to your device ip, that can be done by adding this to your config.
+ngrok config edit
+
+The contents should be:
+version: "2"
+authtoken: your_token
+
+tunnels:
+ vnc:
+  proto: tcp
+  addr: 22
+ ssh:
+  proto: tcp
+  addr: 5900
+ site:
+  proto: http
+  addr: 80
+  domain: some-website-name.ngrok-free.app
+
+->To check configuration file, use "ngrok config check"
+Note: you can start these tunnels manually by running the below commands - 
+ngrok start --all or ngrok start --config=/home/<user>/.config/ngrok/ngrok.yml --all
+
+To create a service:
+sudo nano /etc/systemd/system/ngrok.service
+
+Contents inside are:
+[Unit]
+Description=ngrok
+After=network.target
+[Service]
+ExecStart=/usr/local/bin/ngrok start --config=/home/<user>/.config/ngrok/ngrok.yml --all
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl daemon-reload && sudo systemctl enable ngrok && sudo systemctl start ngrok && sudo systemctl status ngrok
+
+If you want to run multiple services on different ports of the same domain, it can't be done using ngrok.
+As an alternative, I created another ngrok account using +something trick of gmail, and got a new domain name.
+Now lets create a new yml file and service for it.
+
+mkdir .config/ngrok2 && sudo nano .config/ngrok2/ngrok2.yml
+
+The contents should be:
+version: "2"
+authtoken: <your second accounts auth token>
+tunnels:
+  cloud:
+    addr: 8080
+    proto: http
+    domain: second-domain-name.ngrok-free.app
+
+Test if it is working by using ngrok start command. If it runs without errors, all is well.
+ngrok start --config=/home/<user>/.config/ngrok2/ngrok2.yml --all
+
+Now create a seperate service for it, by copying the ngrok.service file.
+sudo cp /etc/systemd/system/ngrok.service /etc/systemd/system/ngrok2.service
+sudo nano /etc/systemd/system/ngrok2.service
+
+Change the path from "--config=/home/<user>/.config/ngrok/ngrok.yml" to 
+"--config=/home/<user>/.config/ngrok2/ngrok2.yml" in ExecStart.
+
+sudo systemctl daemon-reload && sudo systemctl enable ngrok2 && sudo systemctl start ngrok2 && sudo systemctl status ngrok2
+
+This should start both the services running on two different ports at two different domains.
+For more info on this, refer: https://stackoverflow.com/questions/25522360/ngrok-configure-multiple-port-in-same-domain
