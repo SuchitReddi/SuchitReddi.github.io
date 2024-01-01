@@ -1,0 +1,79 @@
+If you want to host your own website using raspberry pi, one way is to run an apache server,
+then use ngrok's dns service to give it a name instead of typing in the ip address which will
+limit the access to only local networks.
+
+**ngrok**
+Sign up to ngrok and create a free domain there. You should run this site before starting nginx.
+
+**nginx**
+
+sudo apt install nginx
+
+After installing nginx, I will tell you the procedure to host your local site using the nginx
+domain name.
+
+sudo mkdir /var/www/mysite
+Place your files in this directory treating it as the root for your site. I cloned my github pages
+site and will also add a step to auto update it whenever my github pages site gets updated.
+
+cd /var/www/mysite/
+sudo git clone <git repo link>
+
+Create a conf file for your site at /etc/nginx/sites-available/
+sudo nano /etc/nginx/sites-available/mysite.conf
+
+Contents are:
+server {
+
+        listen 80;
+	listen [::]:80;
+
+        server_name your-domain-name.ngrok-free.app;
+
+        root /var/www/<github repo folder>;
+
+        index index.html index.htm index.nginx-debian.html;
+
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+	}
+
+}
+
+We need to create a symlink or shortcut of this conf file in sites-enabled.
+sudo ln -s /etc/nginx/sites-available/mysite.conf /etc/nginx/sites-enabled/mysite.conf
+sudo nginx -t (This test command should pass before going any further)
+
+## I encountered two errors here, one is if the domain name is too long, go to /etc/nginx/nginx.conf.
+You should uncomment a line that should say "server_name_has_bucket_size 64;". Increase to 128 and 
+so on if it's still big.
+The other error is more common, a busy port 80 due to running apache. To check what is using port 80,
+use `sudo netstat -plant | grep 80`. If you can see something running on port 80, run this:
+sudo /etc/init.d/apache2 stop ##
+
+Finally, restart the nginx server
+sudo /etc/init.d/nginx restart
+
+After setting up the site, you might want to auto-update the github repository if any changes are made.
+So, lets automate the git pull.
+Create a file, maybe gitpull.sh in tools/nginx
+
+sudo mkdir tools/nginx
+sudo nano tools/nginx/gitpull.sh
+
+The contents of this file are (The below part reset --hard will remove any uncommitted changes):
+cd /var/www/gitpages && sudo git fetch --all && sudo git reset --hard origin/main && sudo git pull origin main
+sudo chmod +x nginx/gitpull.sh
+
+Now, we should add this file gitpull.sh to crontab so that it can run automatically.
+
+crontab -e
+*/1 * * * * /home/<user>/tools/nginx/gitpull.sh
+
+The above command will check every minute for changes and pull any new file changes.
+In the five places, 1st one is for minutes, 2nd one is for hours, and so on.
+So if you want it to run every 12 hours, change it like this:
+
+0 */12 * * * /home/<user>/tools/nginx/gitpull.sh

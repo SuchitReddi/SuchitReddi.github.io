@@ -1,0 +1,129 @@
+#### THERE ARE VARIABLES YOU NEED TO CHANGE IF YOU COPY PASTE THE COMMANDS ####
+
+First you will need a raspberry pi to use as a server which can be run 24/7.
+Install whatever OS you want, I am using raspberry pi os because it is easier
+to set up ssh or vnc in it. Once done, you will need to install filebrowser and
+set it up to start as a service on reboot using the system daemon (systemd).
+
+**filebrowser**
+->Command to download filebrowser:
+curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+
+->Once it's downloaded, the command to test the server is:
+filebrowser -a youripaddr -p 8080 -r path/to/your/root/folder
+
+If you are getting a busy port error, check ports using "sudo netstat -plant | grep 80", then
+kill the process occupying that port (mostly apache).
+
+->Once the server starts, go to youripaddr:8080 in your browser. To create a startup
+service in systemd, follow these steps:
+sudo nano tools/filebrowser/filebrowser.json
+
+The contents inside should be:
+{
+  "port": 8080,
+  "baseURL": "",
+  "address": "",
+  "log": "stdout",
+  "database": "tools/filebrowser/filebrowser.db",
+  "root": "path/to/your/root/folder"
+}
+
+->Remove the existing database from ~/ using this command:
+rm ~/filebrowser.db
+
+->Now give the necessary permissions to the files and check for the file owners:
+sudo chown www-data:www-data tools/filebrowser/filebrowser.*
+ls -la tools/filebrowser/filebrowser.*
+
+->Now to convert this into a service (first make sure any running filebrowser server is stopped):
+sudo nano /etc/systemd/system/filebrowser.service
+
+The contents inside should be: (Change <user> to your username)
+[Unit]
+Description=File Browser
+After=network.target
+[Service]
+ExecStart=/usr/local/bin/filebrowser -c /home/<user>/tools/filebrowser/filebrowser.json
+[Install]
+WantedBy=multi-user.target
+
+What this means is this service of file browser should start after network.target runs, i.e
+network connection is established. The command to be executed is `filebrowser -c tools/filebrowser/filebrowser.json`
+but with absolute path to filebrowser. Any IP of the machine can be used with port 8080 to access it.
+
+->The following commands will add this service to starutp:
+systemctl enable filebrowser
+systemctl start filebrowser
+To check the status (systemctl status filebrowser)
+**
+
+Now that filebrowser is setup, you can access your files in the root folder you set from any device
+connected to the local network or your wifi using just a web browser. The constraint here is,
+if I connect the pi on which this filebrowser is running to Student (my university's network), you can
+only access this via browser on devices connected to the same Student network. If you try to access this
+ip address from any other network, you can't. Because there will be a different internet facing public ip
+under which all these private ip's are provided. So, the networks outside the Student network can't even
+see the devices inside the Student network as individual devices. To overcome this limitation, 
+I think ngrok or some kind of ddns service (nginx, duckdns) can be utilized.
+
+**ngrok**
+->To download ngrok:
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
+
+->Sign up to ngrok, you will get an authentication token. You should add it to the config file.
+ngrok config add-authtoken <token>
+
+->A test tunnel can be started using:
+ngrok http 80
+
+->To get a domain for the pi's ip, go to ngrok.com and login. There you can see domains in Cloud Edge.
+There create a new domain. To start the tunnel using the domain:
+ngrok http --domain=some-website-name.ngrok-free.app 80
+To share the files in a location:
+ngrok http --domain=some-website-name.ngrok-free.app /media/<user>/share/
+
+Now you can access the website from networks out of your local network by searching for the <some-website-name>
+in your browser.
+
+->You can also set up a domain name kind of thing to your device ip, that can be done by adding this to your config.
+ngrok config edit
+
+The contents should be:
+version: "2"
+authtoken: your_token
+
+tunnels:
+ vnc:
+  proto: tcp
+  addr: 22
+ ssh:
+  proto: tcp
+  addr: 5900
+ site:
+  proto: http
+  addr: 80
+  domain: some-website-name.ngrok-free.app
+
+->To check configuration file, use "ngrok config check"
+Note: you can start these tunnels manually by running the below commands - 
+ngrok start --all or ngrok start --config=/home/<user>/.config/ngrok/ngrok.yml --all
+
+To create a service:
+sudo nano /etc/systemd/system/ngrok.service
+
+Contents inside are:
+[Unit]
+Description=ngrok
+After=network.target
+[Service]
+ExecStart=/usr/local/bin/ngrok start --config=/home/<user>/.config/ngrok/ngrok.yml --all
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl daemon-reload && sudo systemctl enable ngrok && sudo systemctl start ngrok && sudo systemctl status ngrok
+
+More resources for reverse proxy with filebrowser:
+https://www.cloudbooklet.com/how-to-install-file-browser-on-ubuntu-22-04-with-nginx/
+
+
