@@ -26,7 +26,7 @@
 
 
     <div class="overlay">
-    <h1>Installation</h1>
+        <h1>Installation</h1>
 
         This python honeypot is set up on my raspberry pi 4 using opencanary. A virtual environment should be
         created before installation of opencanary.<br>
@@ -43,7 +43,7 @@
             pip3 install scapy pcapy<br>
         </code>
 
-    <h1>Configuration</h1>
+        <h1>Configuration</h1>
 
         Once installed, we need to configure opencanary.<br>
         <code>
@@ -68,14 +68,16 @@
         to enabled.<br>
         You can customize the email alerts on so that only new events are sent by updating the log-reader.py file.<br>
 
-    <h2>Disguise</h2>
+        <h2>Disguise</h2>
 
         One more important issue is that the honeypot will be visible as a raspberry pi. To disguise it as a different
         device, we should change the mac address of the pi.<br>
+        Also the hostname can be changed to something else. Edit /etc/hosts, and this line should be at the end
+        "127.0.1.1 `some juicy name here`".<br>
         You can learn how to do it by checking <a href="/Notes/Security/others/changing MAC address.html"
             target="_blank" rel="noopener nofollow noreferrer">this</a> guide out.<br>
 
-    <b>References:</b><br>
+        <b>References:</b><br>
         <a href="https://simpaul.com/open-canary-on-a-pi/" target="_blank"
             rel="noopener nofollow noreferrer">https://simpaul.com/open-canary-on-a-pi/</a><br>
         <a href="https://bobmckay.com/i-t-support-networking/hardware/create-a-security-honey-pot-with-opencanary-and-a-raspberry-pi-3-updated-2021/"
@@ -83,6 +85,8 @@
             rel="noopener nofollow noreferrer">https://bobmckay.com/i-t-support-networking/hardware/create-a-security-honey-pot-with-opencanary-and-a-raspberry-pi-3-updated-2021/</a><br>
         <a href="https://cybergladius.com/build-honeypot-traps-to-secure-your-network/" target="_blank"
             rel="noopener nofollow noreferrer">https://cybergladius.com/build-honeypot-traps-to-secure-your-network/</a><br>
+        <a href="https://nateahess.medium.com/opencanary-on-a-raspberry-pi-528242fcb3dd" target="_blank"
+            rel="noopener nofollow noreferrer">https://nateahess.medium.com/opencanary-on-a-raspberry-pi-528242fcb3dd</a><br>
 
     </div>
     <button><a href="..">Back</a></button><br>
