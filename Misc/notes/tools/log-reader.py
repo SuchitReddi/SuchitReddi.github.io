@@ -8,8 +8,8 @@ import sys
 TO_ADDRESS = 'securityalerts@duck.com'
 SMTP_SERVER = 'smtp.gmail.com'
 
-SMTP_USERNAME = "vizagrockers123@gmail.com"
-SMTP_PASSWORD = "rwtn cauo nuhy ymyh"
+SMTP_USERNAME = "mail_id"
+SMTP_PASSWORD = "passwd"
 SUBJECT = "OpenCanary Alert"
 
 context = ssl.create_default_context()
