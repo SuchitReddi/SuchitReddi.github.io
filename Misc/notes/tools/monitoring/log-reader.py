@@ -1,8 +1,8 @@
 import smtplib, ssl
-import string
-import os
-from time import strftime
-import sys
+#import string
+#import os
+#from time import strftime
+#import sys
 
 TO_ADDRESS = 'REDACTED'
 SMTP_SERVER = 'smtp.gmail.com'
@@ -19,7 +19,7 @@ The game is on! Is this real?
 
 """
 
-LOGFILE = '/var/tmp/opencanary-tmp.log'
+LOGFILE = '/home/(user)/opencanary.log'
 
 # very basic code to send a simple email to the defined recipient
 def  SendEmail(emailText):
@@ -59,7 +59,6 @@ def CheckLine(sourceEvent):
     destPort   = findParam(sourceEvent, "dst_port")
     sourcePort = findParam(sourceEvent, "src_port")
     logType    = findParam(sourceEvent, "logtype")
-    adjTime    = findParam(sourceEvent, "local_time_adjusted")
 
     # better code would be to use a config file, but for now let's just add some simple cases
     if destPort == "-1":
@@ -69,7 +68,7 @@ def CheckLine(sourceEvent):
             print("Basic logs")
     else:
         if logType == "13001":
-            if destIP == "0.0.0.0":
+            if destPort == "161":
             # Too much SNMP traffic when enabled - should investigate
                 sendTheEmail = False
                 print("SNMP traffic")
@@ -83,9 +82,9 @@ def CheckLine(sourceEvent):
     else:
         displayCommand += '\033[32;40m Ignored \033[37;40m\n'
 
-    f = open("/dev/tty1", "w")
-    f.write(displayCommand)
-    f.close()
+    with open("/dev/tty1", "w") as f:
+        f.write(displayCommand)
+        f.close()
 #Investigate this return is resulting in any sendTheEmail's after this being invalid. 
 #But commenting it is stopping emails
     return sendTheEmail
