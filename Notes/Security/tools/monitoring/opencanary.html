@@ -26,7 +26,7 @@
 
 
     <div class="overlay">
-        <h1>Installation</h1>
+        <h2>Installation</h2>
 
         This python honeypot is set up on my raspberry pi 4 using opencanary. A virtual environment should be
         created before installation of opencanary.<br>
@@ -43,7 +43,7 @@
             pip3 install scapy pcapy<br>
         </code>
 
-        <h1>Configuration</h1>
+        <h2>Configuration</h2>
 
         Once installed, we need to configure opencanary.<br>
         <code>
@@ -74,8 +74,23 @@
         device, we should change the mac address of the pi.<br>
         Also the hostname can be changed to something else. Edit /etc/hosts, and this line should be at the end
         "127.0.1.1 `some juicy name here`".<br>
-        You can learn how to do it by checking <a href="/Notes/Security/others/changing MAC address.html"
+        You can learn how to do it by checking <a href="/Notes/Security/tools/spoofing/changing MAC address.html"
             target="_blank" rel="noopener nofollow noreferrer">this</a> guide out.<br>
+
+        The configuration of the honeypot is done in the config file. I copied my final <a
+            href="/Misc/notes/tools/monitoring/opencanary.conf" target="_blank" rel="noopener nofollow noreferrer">config</a> file to locations like <code>/root/.opencanary.config</code> where opencanary checks for config files.<br>
+        
+        To send important events as alerts to mail, I developed a <a href="/Misc/notes/tools/monitoring/log-reader.py" target="_blank" rel="noopener nofollow noreferrer">script</a>. This script is run every minute using cron job.<br>
+        crontab -e<br>
+        Add this below line at the end of the file.<br>
+        <code>
+            */1 * * * * sudo python3 /home/(user)/env/logtool/log-reader.py<br>
+        </code>
+
+        The mail received from this script looks like this:<br>
+        <center>
+        <img style="max-width: 60%; max-height: 60%;" src="/Misc/notes/tools/monitoring/mail_alert.png" alt="mail alerts from opencanary"><br>
+        </center>
 
         <b>References:</b><br>
         <a href="https://simpaul.com/open-canary-on-a-pi/" target="_blank"
@@ -86,7 +101,7 @@
         <a href="https://cybergladius.com/build-honeypot-traps-to-secure-your-network/" target="_blank"
             rel="noopener nofollow noreferrer">https://cybergladius.com/build-honeypot-traps-to-secure-your-network/</a><br>
         <a href="https://nateahess.medium.com/opencanary-on-a-raspberry-pi-528242fcb3dd" target="_blank"
-            rel="noopener nofollow noreferrer">https://nateahess.medium.com/opencanary-on-a-raspberry-pi-528242fcb3dd</a><br>
+            rel="noopener nofollow noreferrer">OS Fingerprinting Evasion</a><br>
 
     </div>
     <button><a href="..">Back</a></button><br>

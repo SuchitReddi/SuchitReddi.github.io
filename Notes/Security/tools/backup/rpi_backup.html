@@ -28,10 +28,16 @@
     <div class="overlay">
         <h1> Raspberry Pi Backup </h1>
         <p>
-            The command to restore a RPi image to a usb drive is:
-            <code>sudo dd bs=1M if=/media/sherl0ck/T7/RPi_backups/fileserver/fileserver-dd-backup-20240219-231054/fileserver-dd-backup-20240219-231054.img of=/dev/sdb status=progress
-            </code>
-            <a href="" target="_blank" rel="noopener nofollow noreferrer">blog</a><br><br>
+            Backing up data is important. Large files and storages might be hard to back up and maintain, but something as small as a raspberry pi should not be an issue.<br>
+            So I started using a tool for backing up the whole RPi, which can be easily restored if needed.<br>
+            The tool is called <a href="https://github.com/framps/raspiBackup" target="_blank" rel="noopener nofollow noreferrer">raspiBackup</a>. It's very easy to use.<br>
+            Just install the tool, and run the command <code>sudo installation/install.sh</code> from the tool's root directory.<br>
+            <img style="width: 70%;" src="/Misc/notes/tools/backup/raspiBackupInstall_en.gif" alt="raspiBackup"><br>
+            Configure regular backups there. I stored my backups in an external SSD connected to the Pi.<br>
+
+            The command to restore a RPi image to a usb drive is:<br>
+            <code>sudo dd bs=1M if=path/to/image/fileserver-dd-backup-20240219-231054.img of=/dev/sdb status=progress
+            </code><br>
         </p>
     </div>
     <button><a href="..">Back</a></button><br>
