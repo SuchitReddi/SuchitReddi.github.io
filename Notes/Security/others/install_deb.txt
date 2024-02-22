@@ -1,4 +1,0 @@
-Install a software known as gdebi
-Go to the deb file, then right click on it
-Open with... gdebi
-You can follow the basic installation steps from there.
