@@ -32,6 +32,17 @@ h3 {
     }
 }
 
+.memwipe-video video {
+    max-width: 70%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .memwipe-video video {
+        max-width: 80%;
+        height: auto;
+    }
+}
 .box {
     padding: 10px;
     float: left;
