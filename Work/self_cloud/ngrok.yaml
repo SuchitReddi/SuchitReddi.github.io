@@ -1,0 +1,9 @@
+version: "3"
+agent:
+    authtoken: this is a secret too, you know 🤷‍♂️🤷‍♂️
+
+tunnels:
+  cloud:
+    proto: http
+    addr: 8080
+    domain: use your own domain name
