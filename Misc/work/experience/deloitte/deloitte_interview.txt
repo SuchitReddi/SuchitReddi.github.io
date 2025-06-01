@@ -1,0 +1,57 @@
+TIER1 Security Event Monitoring Analyst
+Intro-
+One such recent project is setting up SIEM for my network using a Raspberry Pi. I spend my free time reading either about latest tech advancements or interesting stories from the past. 
+I participate in competitions and listen to technology podcasts to keep myself updated. I like to automate small tasks I repeat daily. I set up webpages to simplify tasks, like remote decryption of my raspberry pi. 
+I write about my findings and experiences on platforms like LinkedIn and my website.
+
+
+Alternate Elevator Speech-
+My name is Suchit. I am a final year student with a major in Electronics and minor in Computers, graduating from Shiv Nadar University, Delhi on May 26th. I am from Visakhapatnam. 
+I am passionate about cybersecurity, and have worked on various personal and academic projects on the same. I completed my IBM Cybersecurity Analyst certification. 
+I worked as an Automation Intern at Irdeto, a cybersecurity company, for 3 months. There, I learned about security in set-top-boxes (Conditional access CA and Digital Rights Management DRM). 
+I did many projects but never had the opportunity to work in a company that contributes to the society. After reading the job description of this role, it seemed like a good fit. And that's what brings me here for this exciting opportunity.
+
+Passion story-
+When I was in my intermediate, I wanted to gain access to Wi-Fi to download some large games. So, I looked into Wi-Fi hacking, and was successfully able to get into one of my neighbour's Wi-Fi network. 
+Ofcourse I told the neighbours about this later. But this made me realise how easy it was to gain access to someone's network. So, I started to look for ways to defend myself against such attacks.
+Around the same time, my college provided us with tablets. I was the one who cracked the software they used to lock it so that me and my friends can play games on it.
+
+Strengths and Weaknesses -
+I always meet deadlines, but I start working on it as the deadline approaches. But I started doing that work as soon as it is given, in small chunks to manage time better.
+I like documenting what I do.
+
+Related personal projects -
+Setting up a honeypot using open canary to monitor my Raspberry Pi for unauthorized access attempts or non-malicious connection attempts.
+Trying to setup a security monitoring system on the raspberry pi using ELK siem.
+
+About Deloitte-
+Deloitte is one of the four big accounting organizations that offer professional services to global clients. 
+It is a UK-based multinational professional services provider that provides consulting, financial advisory, audit, risk advisory, legal and tax services.
+For us, good isn't good enough. We aim to be the best at all that we do—to help clients realize their ambitions, to make a positive difference in society.
+
+What do you like about Deloitte? -
+I read about Deloitte University, which has live classrooms and continuous learning. I find it very beneficial to employees. 
+
+
+Any questions for us - 
+Do you get opportunities for skill development at Deloitte?
+
+Round 1: Tech (7th May 2024)
+Interviewed by - Tejaswini Dandamudi, Jenny Swaroop Modugu
+Started at 3:30PM
+Ended at 4:12PM
+
+Round 2: Tech (10th May 2024)
+Interviewed by - Venu Gopal Ramagiri and Saravanan Kalyanasundaram
+Started at 4:30PM
+Ended at 5:05PM
+
+Round 3: BI Round - In person/Virtual - GCS (21st May 2024)
+At Deloitte USI, RMZ Infinity Tower, Sector 18.
+HR - Bhavana Khanna, Shreya Makhija
+Interviewed by Ravindra Sandepudi
+
+What siem did you try to install on your pi? Did you try wazuh?
+Where do you see yourself in 2 years? What about certifications and masters?
+Why do you find blue team more intriguing? You find blue team challenging, but it is also stressful. How will you handle that?
+Now you get to explore different technologies. But in a job, you will have to stick with one tool. How do you plan to deal with that?
