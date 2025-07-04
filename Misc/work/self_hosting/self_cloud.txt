@@ -68,7 +68,15 @@ see the devices inside the Student network as individual devices. To overcome th
 I think ngrok or some kind of ddns service (nginx, duckdns) can be utilized.
 
 Check the Self-Hosted Website project for info on how to use ngrok to host services simultaneously on
-two different domain names. (https://suchitreddi.github.io/Work/self_site.html)
+two different domain names. But ngrok is not ideal for cloud hosting. The limit for download is 1GB per month. (https://suchitreddi.github.io/Work/self_site.html)
+
+So, instead of ngrok, I used zrok, which has 5 GB limit per day. To use it on windows:
+--> Download zrok zip from their site, and extract the tar.gz file. Take the exe inside it and place it in "C:\Users\<username>\AppData\Local\Microsoft\WindowsApps". This will allow the exe to be executed from any location.
+--> Now, you can open the myzrok thing, and you will see a setup guide popup. There will be a command like this "zrok enable <account token>". Run this first.
+--> To generally share a port, this should be enough "zrok share public 8080"
+--> But to get a static domain, use this instead: 
+zrok reserve public 8080 --unique-name "name"
+zrok share reserved "name"
 
 More resources for reverse proxy with filebrowser:
 https://www.cloudbooklet.com/how-to-install-file-browser-on-ubuntu-22-04-with-nginx/
