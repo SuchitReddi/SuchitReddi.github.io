@@ -2,6 +2,10 @@ If you want to host your own website using raspberry pi, one way is to run an ap
 then use ngrok's dns service to give it a name instead of typing in the ip address which will
 limit the access to only local networks.
 
+**tailscale**
+This seems to be the best and easisest option with the least complicated setup. Installation is super simple.
+https://pimylifeup.com/raspberry-pi-tailscale/
+
 **nginx**
 
 sudo apt install nginx
@@ -76,7 +80,7 @@ So if you want it to run every 12 hours, change it like this:
 0 */12 * * * /home/<user>/tools/nginx/gitpull.sh
 
 
-**ngrok**
+**ngrok** (zrok has less limitations. Check https://suchitreddi.github.io/Work/self_cloud.html for more info).
 
 ->To download ngrok:
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok

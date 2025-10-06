@@ -59,12 +59,13 @@ To check the status (systemctl status filebrowser)
 **
 
 Now that filebrowser is setup, you can access your files in the root folder you set from any device
-connected to the local network or your wifi using just a web browser. The constraint here is,
-if I connect the pi on which this filebrowser is running to Student (my university's network), you can
-only access this via browser on devices connected to the same Student network. If you try to access this
+connected to the local network or your wifi using just a web browser. The constraint here is, if you try to access this
 ip address from any other network, you can't. Because there will be a different internet facing public ip
-under which all these private ip's are provided. So, the networks outside the Student network can't even
-see the devices inside the Student network as individual devices. To overcome this limitation, 
+under which all these private ip's are provided. To overcome this limitation, there are many options.
+
+The below methods with ngrok and zrok are good too. But look into TAILSCALE. It's setup was very simple.
+It provides you with a internet accessible IP address for each of your device. See resources for more info.
+
 I think ngrok or some kind of ddns service (nginx, duckdns) can be utilized.
 
 Check the Self-Hosted Website project for info on how to use ngrok to host services simultaneously on
@@ -79,5 +80,6 @@ zrok reserve public 8080 --unique-name "name"
 zrok share reserved "name"
 
 More resources for reverse proxy with filebrowser:
+https://pimylifeup.com/raspberry-pi-tailscale/
 https://www.cloudbooklet.com/how-to-install-file-browser-on-ubuntu-22-04-with-nginx/
 
