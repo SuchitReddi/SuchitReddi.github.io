@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recent Listens – ListenBrainz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 1.5rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #020617;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      border: 1px solid #1f2937;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-bottom: 1rem;
+    }
+    .status {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .status.error {
+      color: #fecaca;
+    }
+    ul.listen-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .listen-item {
+      padding: 0.9rem 0.7rem;
+      border-bottom: 1px solid #1f2937;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .listen-item:last-child {
+      border-bottom: none;
+    }
+    .track-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .track-meta {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    .track-time {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .badge {
+      background: #111827;
+      border-radius: 999px;
+      padding: 0.1rem 0.5rem;
+      border: 1px solid #1f2937;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <button><a href=".">Back</a></button><br>
+  <div class="container">
+    <h1>
+      🎧 Recent Listens (8 hours)
+      <span class="badge">ListenBrainz</span>
+    </h1>
+    <div class="meta">
+      User: <strong>anomika</strong> · Source: 
+      <a href="https://listenbrainz.org/user/anomika/" target="_blank" rel="noopener">
+        ListenBrainz profile
+      </a>
+    </div>
+    <div id="status" class="status">Loading listens…</div>
+    <ul id="listen-list" class="listen-list"></ul>
+  </div>
+
+  <script>
+    // CONFIG – you can change this to another user or minutes if you like
+    const FEED_URL = "https://listenbrainz.org/syndication-feed/user/anomika/listens?minutes=480";
+
+    async function loadFeed() {
+      const statusEl = document.getElementById("status");
+      const listEl = document.getElementById("listen-list");
+
+      try {
+        const res = await fetch(FEED_URL);
+        if (!res.ok) {
+          throw new Error("HTTP " + res.status + " " + res.statusText);
+        }
+
+        const text = await res.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(text, "text/xml");
+
+        // Atom feeds are namespaced
+        const ATOM_NS = "http://www.w3.org/2005/Atom";
+        const entries = xmlDoc.getElementsByTagNameNS(ATOM_NS, "entry");
+
+        if (!entries.length) {
+          statusEl.textContent = "No listens found in this time range.";
+          return;
+        }
+
+        statusEl.textContent = ""; // Clear status
+
+        // Clear existing items
+        listEl.innerHTML = "";
+
+        for (let i = 0; i < entries.length; i++) {
+          const entry = entries[i];
+
+          const titleEl = entry.getElementsByTagNameNS(ATOM_NS, "title")[0];
+          const publishedEl = entry.getElementsByTagNameNS(ATOM_NS, "published")[0];
+          const linkEl = entry.getElementsByTagNameNS(ATOM_NS, "link")[0];
+
+          const title = titleEl ? titleEl.textContent : "Unknown track";
+          const publishedRaw = publishedEl ? publishedEl.textContent : null;
+          const linkHref = linkEl ? linkEl.getAttribute("href") : "#";
+
+          let localTimeStr = "";
+          if (publishedRaw) {
+            const d = new Date(publishedRaw);
+            if (!isNaN(d.getTime())) {
+              localTimeStr = d.toLocaleString();
+            } else {
+              localTimeStr = publishedRaw;
+            }
+          }
+
+          // In your example title is "Track - Artist"
+          let trackName = title;
+          let artistName = "";
+          const parts = title.split(" - ");
+          if (parts.length >= 2) {
+            artistName = parts.pop();
+            trackName = parts.join(" - ");
+          }
+
+          const li = document.createElement("li");
+          li.className = "listen-item";
+
+          li.innerHTML = `
+            <div class="track-title">${escapeHtml(trackName)}</div>
+            <div class="track-meta">
+              ${artistName ? "by <strong>" + escapeHtml(artistName) + "</strong>" : ""}
+              · <a href="${linkHref}" target="_blank" rel="noopener">View on ListenBrainz</a>
+            </div>
+            <div class="track-time">${localTimeStr ? "Listened at " + localTimeStr : ""}</div>
+          `;
+
+          listEl.appendChild(li);
+        }
+
+      } catch (err) {
+        console.error(err);
+        const statusEl = document.getElementById("status");
+        statusEl.textContent = "Failed to load listens: " + err.message;
+        statusEl.classList.add("error");
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    loadFeed();
+  </script>
+  <button><a href=".">Back</a></button><br>
+</body>
+</html>
