@@ -1,96 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
-  <title> Suchit Reddi's website </title>
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  <meta name="viewport" content="width=device-width, initial scale=1">
-  <meta name="description" content="A website made by Suchit Reddi to host stuff like 
-	Research, Accomplishments, Projects, Resume, Tips, Notes, Series and Movies etc.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suchit Reddi | Personal Website</title>
+  <meta name="description" content="Suchit Reddi's work, projects, notes, achievements, and interests.">
   <meta name="author" content="Suchit Reddi">
-
+  <meta name="theme-color" content="#10151d">
+  <link rel="stylesheet" href="/style.css">
 </head>
+<body class="home-page">
+  <main>
+    <header class="home-header">
+      <p class="eyebrow">Personal site &amp; portfolio</p>
+      <h1>Suchit Reddi</h1>
+      <p class="home-intro">Cybersecurity, projects, notes, and the things I enjoy exploring.</p>
+    </header>
 
-<style>
-  html {
-    background-image: url('Misc/index/index.jpg');
-    background-size: contain;
-  }
+    <nav class="home-grid" aria-label="Explore the website">
+      <a class="home-card" href="/Work/">
+        <img src="/Misc/index/work.jpg" alt="" loading="lazy">
+        <span>Work <span class="card-arrow" aria-hidden="true">↗</span></span>
+        <small>Projects, research, and experience</small>
+      </a>
+      <a class="home-card" href="https://suchitreddi.github.io/Notes/">
+        <img src="/Misc/index/notes.jpeg" alt="" loading="lazy">
+        <span>Notes <span class="card-arrow" aria-hidden="true">↗</span></span>
+        <small>Technical guides and course notes</small>
+      </a>
+      <a class="home-card" href="/event/">
+        <img src="/Misc/index/event.jpg" alt="" loading="lazy">
+        <span>Events <span class="card-arrow" aria-hidden="true">↗</span></span>
+        <small>Security events and reflections</small>
+      </a>
+      <a class="home-card" href="/Honors/">
+        <img src="/Misc/honors/honors.jpg" alt="" loading="lazy">
+        <span>Honors &amp; certifications <span class="card-arrow" aria-hidden="true">↗</span></span>
+        <small>Awards, CTFs, and certifications</small>
+      </a>
+      <a class="home-card" href="/resume.html">
+        <img src="/Misc/index/resume.jpg" alt="" loading="lazy">
+        <span>Resume <span class="card-arrow" aria-hidden="true">↗</span></span>
+        <small>Professional experience and skills</small>
+      </a>
+      <a class="home-card" href="/Entertainment/">
+        <img src="/Misc/index/cinema.jpg" alt="" loading="lazy">
+        <span>Movies &amp; music <span class="card-arrow" aria-hidden="true">↗</span></span>
+        <small>Personal lists and recommendations</small>
+      </a>
+      <a class="home-card" href="/about.html">
+        <img src="/Misc/index/about.png" alt="" loading="lazy">
+        <span>About me <span class="card-arrow" aria-hidden="true">↗</span></span>
+        <small>A little about who I am</small>
+      </a>
+    </nav>
+  </main>
 
-  .box {
-    opacity: 0.8;
-}
-
-@media (max-width: 767px) {
-    .box {
-        opacity: 0.8;
-    }
-}
-</style>
-
-<body>
-  <div class="heading">
-    <h1>Suchit Reddi's Website</h1>
-  </div>
-
-  <div class="container">
-    <div class="box">
-      <a href="Work">
-        <img src="./Misc/index/work.jpg" alt="Work image" />
-        <center><button>Work</button></center>
-      </a>
-    </div>
-    <div class="box">
-      <a href="Notes">
-        <img src="./Misc/index/notes.jpeg" alt="Notes image">
-        <center><button>Notes</button></center>
-      </a>
-    </div>
-    <div class="box">
-      <a href="event">
-      <img src="./Misc/index/event.jpg" alt="Security Event Rant">
-        <center><button>Events</button></center>
-      </a>
-    </div>
-    <div class="box">
-      <a href="Honors/">
-        <img src="./Misc/honors/honors.jpg" alt="Honors image">
-        <center><button>Honors, CTFs, and Certs</button></center>
-      </a>
-    </div>
-    <div class="box">
-      <a href="resume.html">
-        <img src="./Misc/index/resume.jpg" alt="Resume image">
-        <center><button>Resume</button></center>
-      </a>
-    </div>
-    <div class="box">
-      <a href="Entertainment">
-        <img src="./Misc/index/cinema.jpg" alt="Cinema image">
-        <center><button>Movies and Music</button></center>
-      </a>
-    </div>
-    <div class="box">
-      <a href="about.html">
-        <img src="./Misc/index/about.png" alt="About image">
-        <center><button>About Me</button></center>
-      </a>
-    </div>
-  </div>
+  <footer class="home-footer">
+    <span>Get in touch</span>
+    <a href="mailto:suchit20016+gh@gmail.com">Email</a>
+    <a href="https://github.com/SuchitReddi" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/suchitreddi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </footer>
 </body>
-
-<footer>
-  <div class="footer-heading">
-    <h3>Contact:</h3>
-      <a href="mailto:rs521@snu.edu.in" target="_blank"
-        rel="noopener noreferrer nofollow"><button>Mail</button></a> |
-      <a href="https://github.com/SuchitReddi" target="_blank"
-        rel="noopener noreferrer nofollow"><button>GitHub</button></a> |
-      <a href="https://www.linkedin.com/in/suchitreddi/" target="_blank"
-        rel="noopener noreferrer nofollow"><button>LinkedIn</button></a>
-  </div>
-</footer>
-
 </html>
