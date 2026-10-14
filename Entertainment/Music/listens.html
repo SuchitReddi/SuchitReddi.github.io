@@ -4,91 +4,12 @@
   <meta charset="UTF-8" />
   <title>Recent Listens – ListenBrainz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      margin: 0;
-      padding: 1.5rem;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      background: #020617;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-      border: 1px solid #1f2937;
-    }
-    h1 {
-      margin-top: 0;
-      font-size: 1.6rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .meta {
-      font-size: 0.85rem;
-      color: #9ca3af;
-      margin-bottom: 1rem;
-    }
-    .status {
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-    .status.error {
-      color: #fecaca;
-    }
-    ul.listen-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .listen-item {
-      padding: 0.9rem 0.7rem;
-      border-bottom: 1px solid #1f2937;
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
-    .listen-item:last-child {
-      border-bottom: none;
-    }
-    .track-title {
-      font-weight: 600;
-      font-size: 1rem;
-    }
-    .track-meta {
-      font-size: 0.8rem;
-      color: #9ca3af;
-    }
-    .track-time {
-      font-size: 0.8rem;
-      color: #6b7280;
-    }
-    a {
-      color: #93c5fd;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .badge {
-      background: #111827;
-      border-radius: 999px;
-      padding: 0.1rem 0.5rem;
-      border: 1px solid #1f2937;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: #9ca3af;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="listen-page">
+  <main class="page-content">
   <button><a href=".">Back</a></button><br>
-  <div class="container">
+  <div class="listen-panel">
     <h1>
       🎧 Recent Listens (8 hours)
       <span class="badge">ListenBrainz</span>
@@ -102,6 +23,7 @@
     <div id="status" class="status">Loading listens…</div>
     <ul id="listen-list" class="listen-list"></ul>
   </div>
+  </main>
 
   <script>
     // CONFIG – you can change this to another user or minutes if you like
